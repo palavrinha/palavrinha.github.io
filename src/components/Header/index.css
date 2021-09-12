@@ -1,0 +1,37 @@
+
+.navbar{
+    background-color: #F23229;
+}
+.nav-container{
+    display: flex; 
+    justify-content: flex-end;
+}
+
+.dropdown-menu.show {
+    color: white;
+    background-color: #F23229;
+}
+a.dropdown-item{
+    color: white;
+}
+
+
+.dropdown-toggle::after{ color:white; }
+
+#basic-nav-dropdown{
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+    padding-top: 5px;
+    color: white;
+}
+
+#basic-nav-dropdown a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.dropdown-toogle :hover{
+    background-color: #fff;
+    color: black;
+}
