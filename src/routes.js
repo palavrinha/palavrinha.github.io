@@ -15,7 +15,7 @@ function NotFound() {
 export default function Routes() {
     return (
         <>
-            <BrowserRouter>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Switch>
                     <Route exact path={'/language-development'} component={LanguageDevelopment} />
                     <Route exact path={'/'} component={Home} />
