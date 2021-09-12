@@ -1,5 +1,5 @@
 import React from 'react'
-import { Switch, Route, BrowserRouter } from "react-router-dom";
+import { Switch, Route, HashRouter } from "react-router-dom";
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import LanguageDevelopment from './pages/LanguageDevelopment';
@@ -15,7 +15,7 @@ function NotFound() {
 export default function Routes() {
     return (
         <>
-            <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <HashRouter>
                 <Switch>
                     <Route exact path={'/language-development'} component={LanguageDevelopment} />
                     <Route exact path={'/'} component={Home} />
@@ -23,7 +23,7 @@ export default function Routes() {
                     <Route exact path={'/about-us'} component={AboutUs} />
                     <Route component={NotFound} />
                 </Switch>
-            </BrowserRouter>
+            </HashRouter>
         </>
     )
 }
