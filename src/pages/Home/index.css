@@ -1,5 +1,6 @@
 .carousel-item-area {
     display: flex;
+    height: 100vh;
 }
 .carousel-indicators button:not(.active){
     background-color: white;
@@ -17,14 +18,12 @@
     display: flex;
     flex-direction: column;
     background-color: #0588CB;
+    width: auto;
 }
 .carousel-item-area .carousel-description section{
     text-align: start;
     width: 65%;
     margin: auto;
-}
-.carousel-item-area .carousel-description section img{
- margin-bottom: 15px;   
 }
 .carousel-item-area .carousel-description section .middle-text{
     font-weight: 100;
@@ -45,6 +44,7 @@
     display: flex;
     flex-direction: column;
     background-color: #F28F05;
+    width: auto;
 }
 .carousel-item-area .carousel-description-2 section{
     text-align: end;
@@ -78,6 +78,7 @@
     display: flex;
     flex-direction: column;
     background-color: #038C3E;
+    width: auto;
 }
 .carousel-item-area .carousel-description-3 section{
     text-align: start;
@@ -104,4 +105,7 @@
 }
 
 
-@media only screen and (max-width: 600px) {}
+.carousel-item-area .carousel-img {
+    width: 100%;
+    height: 100%;
+}

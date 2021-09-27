@@ -11,12 +11,13 @@
 body{
     font: 400 14px 'Montserrat', sans-serif !important;
     overflow: hidden !important;
-    background-color:rgb(238, 238, 238);
+    background-color: white;
 }
 
 p{
     text-indent: 30px;
 }
+
 
 @media only screen and (max-width: 600px) {
     .desktop-only{

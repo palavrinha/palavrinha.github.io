@@ -31,7 +31,7 @@ export default function Home() {
                     <Carousel.Item>
                         <div className="carousel-item-area">
                             <img 
-                                className="d-block carousel-img desktop-only"
+                                className="carousel-img desktop-only"
                                 src={sisters_reading}
                                 alt="Irmãs lendo."
                             />
@@ -66,7 +66,7 @@ export default function Home() {
                                 </section>
                             </div>
                             <img
-                                className="d-block carousel-img desktop-only"
+                                className="carousel-img desktop-only"
                                 src={father_and_daughter}
                                 alt="Pai lendo com a filha."
                             />
@@ -75,7 +75,7 @@ export default function Home() {
                     <Carousel.Item>
                         <div className="carousel-item-area">
                             <img
-                                className="d-block carousel-img desktop-only"
+                                className="carousel-img desktop-only"
                                 src={sisters_drawing}
                                 alt="Irmãs desenhando."
                             />
