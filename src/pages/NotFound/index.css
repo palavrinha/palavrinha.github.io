@@ -1,0 +1,9 @@
+.not-found {
+    height: 100vh;
+    padding-top: 200px;
+}
+.not-found-message{
+    font-size: 40px;
+    font-family: 'Sigmar One';
+    font-weight: 400;
+}

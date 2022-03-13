@@ -1,42 +1,71 @@
 .about-us{
-    background-color:rgb(255, 130, 130);
     overflow-y: auto;
 }
-
-.integrant-section{
-    margin: 15px;
-    box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.41);
-    border-radius: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(252, 234, 234);
-}
-
-.integrant-section .integrant-photo{
-    width: 100px;
-    height: 100px;
+.integrant-photo{
+    width: 250px;
+    height: 250px;
     margin: 20px;
     box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.41);
 }
-
-.integrant-section .integrant-info span{
-    padding-top: 5px;
-    font-weight: bold;
-    color: black;
-    font-size: 12px;
+.about-us-text{
+    background-color: #F23229;
+}
+.middle-text{
+    font-weight: 100;
+    font: 26px 'Montserrat', sans-serif !important;
+    color: white;
+}
+.about-us-integrants{
+    background-color: #0588CB;
+}
+.about-us-integrants .title{
+    font-family: 'Sigmar One';
+    padding: 30px 0px 0px 50px;
+    color: white;
+}
+.integrant-name{
+    font-family: 'Sigmar One';
+    color: white;
+}
+.integrant-text{
+    color: white;
+}
+.align-left{
+    display: flex;
+    margin: auto;
+    margin-left: 5px;
+}
+.align-right{
+    display: flex;
+    margin: auto;
+    margin-right: 5px;
+}
+.integrant-card {
+    padding: 40px;
+}
+.column-space{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tooltip{
+    box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.41);
+    background-color: #F28F05;
+    color: white;
+    border-radius: 10px;
+    min-width: 200px;
+    min-height: 80px;
 }
 
-.integrant-section .integrant-info.integrant-title{
-    font-size: 15px;
+.tooltip-infos{
+    margin: 20px;
 }
-
-
-@media only screen and (max-width: 600px) {
-    
-    .integrant-section .integrant-photo{
-        width: 50px;
-        height: 50px;
-        margin: 10px;
-    }
+.tooltip-infos div{
+    display: flex;
+    align-items: center;
+}
+.tooltip-infos a{
+    text-decoration: none;
+    color: white;
+    margin-left: 3px;
 }

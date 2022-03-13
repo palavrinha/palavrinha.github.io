@@ -35,9 +35,7 @@ export default function LanguageDevelopment() {
     ];
 
     const [currentTipIndex, setCurrentTipIndex] = useState(0);
-    const changePage = function (page) {
-        setCurrentTipIndex(page)
-    }
+    const changePage = (page) =>  setCurrentTipIndex(page); 
 
     return (
         <>

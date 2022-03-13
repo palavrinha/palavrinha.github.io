@@ -10,7 +10,6 @@
 
 body{
     font: 400 14px 'Montserrat', sans-serif !important;
-    overflow: hidden !important;
     background-color: white;
 }
 
@@ -18,6 +17,11 @@ p{
     text-indent: 30px;
 }
 
+.flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @media only screen and (max-width: 600px) {
     .desktop-only{

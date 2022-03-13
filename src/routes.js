@@ -3,14 +3,7 @@ import { Switch, Route, HashRouter } from "react-router-dom";
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import LanguageDevelopment from './pages/LanguageDevelopment';
-
-function NotFound() {
-    return (
-        <div>
-            <h1>Não encontrado</h1>
-        </div>
-    );
-}
+import NotFound from './pages/NotFound';
 
 export default function Routes() {
     return (
