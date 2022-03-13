@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Overlay } from 'react-bootstrap';
+import { Overlay, Popover } from 'react-bootstrap';
+import './index.css';
 
 export default class CustomPopover extends React.Component {
     constructor(props) {
@@ -63,15 +64,16 @@ export default class CustomPopover extends React.Component {
                     target={this._child}
                     shouldUpdatePosition={true}
                 >
-                    <div
+                    <Popover
                         onMouseEnter={() => {
                             this.setState({ showPopover: true })
                         }}
+                        style={{borderRadius: 10}}
                         onMouseLeave={this.handleMouseLeave}
                         id='popover'
                     >
                         {component}
-                    </div>
+                    </Popover>
                 </Overlay>
             </React.Fragment>
         )

@@ -25,7 +25,7 @@ const PopoverComponent = integrant => {
         <h5>Conheça mais:</h5>
         {integrant.info?.map(i => {
             return (
-                <div style={{ marginBottom: 3 }}>
+                <div style={{ marginBottom: 3 }} key={i.url}>
                     {i.icon}
                     <a
                         style={{
@@ -97,7 +97,7 @@ const integrants = [
             {
                 label: 'GitHub',
                 icon: <FaGithub color="#333" style={{ cursor: 'pointer' }} size={16} />,
-                url: 'https://www.linkedin.com/in/lucas-araujo-6213aa199/'
+                url: 'https://github.com/LucasEmmerich'
             },
             {
                 label: 'lucas.emmerich@aluno.cefet-rj.br',
