@@ -81,7 +81,7 @@ export default function Contact() {
                 <div className="subtitle">
                     <h4>Caso queira saber mais sobre o Palavrinha, tirar dúvidas ou compartilhar conosco alguma informação bacana, envie-nos uma mensagem.</h4>
                 </div>
-                <form style={{marginTop: 20}} onSubmit={sendEmail}>
+                <form onSubmit={sendEmail}>
                     <div className="input-div d-flex">
                         <div className="input-div">
                             <h5>Seu nome:</h5>
@@ -104,7 +104,7 @@ export default function Contact() {
                             />
                         </div>
                     </div>
-                    <div className="input-div" style={{ marginTop: 10 }}>
+                    <div className="input-div" >
                         <h5>Sua mensagem:</h5>
                         <textarea
                             placeholder="Digite aqui a sua mensagem..."
@@ -120,7 +120,6 @@ export default function Contact() {
                             className="button"
                             type="submit"
                             disabled={isLoading}
-                            style={{marginTop: 20}}
                         >
                             {
                                 !isLoading ?
