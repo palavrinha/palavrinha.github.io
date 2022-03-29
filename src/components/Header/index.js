@@ -20,6 +20,7 @@ export default function Header() {
                         <Nav.Link onClick={() => history.push('/')} className="text-white" disabled>Parentalidade</Nav.Link>
                         <Nav.Link onClick={() => history.push('/')} className="text-white" disabled>Brincadeiras</Nav.Link>
                         <Nav.Link onClick={() => history.push('/about-us')} className="text-white">Quem Somos</Nav.Link>
+                        <Nav.Link onClick={() => history.push('/contact')} className="text-white">Contate-nos</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar.Collapse>
