@@ -5,11 +5,13 @@ import AboutUs from './pages/AboutUs';
 import LanguageDevelopment from './pages/LanguageDevelopment';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
+import Header from './components/Header'
 
 export default function Routes() {
     return (
-        <>
-            <HashRouter>
+        <HashRouter>
+            <Header />
+            <div style={{ marginTop: '12vh' }}>
                 <Switch>
                     <Route exact path={'/language-development'} component={LanguageDevelopment} />
                     <Route exact path={'/'} component={Home} />
@@ -18,7 +20,7 @@ export default function Routes() {
                     <Route exact path={'/contact'} component={Contact} />
                     <Route component={NotFound} />
                 </Switch>
-            </HashRouter>
-        </>
+            </div>
+        </HashRouter>
     )
 }

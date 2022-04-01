@@ -3,15 +3,23 @@
     flex-direction: column;
     align-items: center;
     width: 20vw;
-    height: 100vh;
-    background-color: white;
-    border-right: 1px solid #8A8A8A;
+    height: 88vh;
+    padding-top: 15px;
+    padding-left: 15px;
+    position: fixed;
+}
+.left-tab-menu:after {
+    content: '';
+    height:  65vh;
+    width: 1px;
+    background-color: black;
 }
 
 .left-tab-menu h1{
     font: 18px 'Sigmar One', sans-serif !important;
     color: #DE4E8D;
     margin: 5px 0 15px 20px;
+    font-weight: bolder;
     text-align: left;
     height: auto;
 }
@@ -19,7 +27,6 @@
 .left-tab-menu .tab-button {
     padding: auto;
     cursor: pointer;
-    font: 14px 'Sigmar One', sans-serif !important;
     text-align: center;
     color: white;
     border-radius: 15px;
@@ -29,38 +36,15 @@
 }
 
 .left-tab-menu .tab-button:not(.active){
-    background-color: white;
+    background-color: white !important;
     color: #797979;
 }
 
 .left-tab-menu .tab-button:is(.active){
-    background-color: #F28F05;
+    background-color: #F28F05 !important;
     color: white;
+    font: 14px 'Sigmar One', sans-serif !important;
 }
-
-.text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 80vh;
-    background-color: white;
-}
-
-.text-container .text-title{
-    font-size: 48px;
-    margin-top: 5px;
-    font-family: 'Sigmar One';
-    color: #F23229;
-    text-align: center;
-}
-
-.text-container .text-body{
-    font: 15px 'Montserrat', sans-serif !important;
-    margin-right: 40px;
-    overflow-y: auto;
-    height: 80%;
-}
-
 
 
 
@@ -70,7 +54,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: white !important;
 }
 
 .text-container-2 .text-title{
@@ -85,7 +69,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #038C3E;
+    background-color: #038C3E !important;
     color: white;
     font: 14px 'Montserrat', sans-serif !important;
     margin-right: 40px;
@@ -112,7 +96,7 @@
     flex-direction: column;
     align-items: center;
     height: 80vh;
-    background-color: white;
+    background-color: white !important;
 }
 
 .text-container-3 .text-title{

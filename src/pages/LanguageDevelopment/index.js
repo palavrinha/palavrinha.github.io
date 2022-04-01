@@ -1,8 +1,8 @@
 import { Tab, Row, Col, Nav, Pagination, Accordion } from 'react-bootstrap';
 import React from 'react';
-import Header from '../../components/Header';
 import './index.css';
 import { useState } from 'react';
+import ChildCommunication from './ChildCommunication';
 
 export default function LanguageDevelopment() {
     const tips = [
@@ -35,200 +35,190 @@ export default function LanguageDevelopment() {
     ];
 
     const [currentTipIndex, setCurrentTipIndex] = useState(0);
-    const changePage = (page) =>  setCurrentTipIndex(page); 
+    const changePage = (page) => setCurrentTipIndex(page);
+
+    const [tabKey, setTabKey] = useState('comunicacao-infantil');
 
     return (
-        <>
-            <Header />
-            <Tab.Container id="left-tabs-example" defaultActiveKey="idx-1">
-                <Row>
-                    <Col sm={3}>
-                        <Nav className="flex-column left-tab-menu">
-                            <h1>Desenvolvimento da Linguagem</h1>
-                            <Nav.Item>
-                                <Nav.Link eventKey="idx-1" className="tab-button">Comunicação Infantil</Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link eventKey="idx-2" className="tab-button">Como ajudar a criança?</Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link eventKey="idx-3" className="tab-button">O esperado por idade</Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link eventKey="idx-4" className="tab-button">Sinais de alerta!</Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link eventKey="idx-5" className="tab-button">Alterações no desenvolvimento</Nav.Link>
-                            </Nav.Item>
-                        </Nav>
-                    </Col>
-                    <Col sm={9}>
-                        <Tab.Content className="text-area">
-                            <Tab.Pane eventKey="idx-1">
-                                <div className="text-container">
-                                    <h1 className="text-title">Comunicação <br /> Infantil</h1>
-                                    <div className="text-body">
-                                        <p>Uma grande preocupação de quem convive com crianças é: Quando elas começarão a falar?</p>
-                                        <p>De fato, a fala é um marco importante no desenvolvimento infantil, mas o que muitas vezes não percebemos é como a criança se comunica!</p>
-                                        <p><b style={{ color: '#F28F05' }}>Através da comunicação transmitimos mensagens para outras pessoas.</b> A fala, com certeza é uma forma de se comunicar, mas antes das tão esperadas primeiras palavras o bebê já se expressa! Até o primeiro ano de vida, que é quando espera-se que surjam as palavras, a criança já interage com os adultos, pelo movimento dos braços, choro, sequência de sons, risos e olhares. Essas habilidades pré-verbais são precursoras das habilidades de diálogo, antes de se expressar verbalmente o bebê já compreende os contextos comunicativos. (ZORZI, HAGE, 2004)</p>
-                                        <p>A forma como falamos com o bebê, isto é, a entonação e as pausas que usamos dão pistas a respeito da linguagem. É por meio da análise dos sons da fala que mais tarde será possível compreender palavras e as estruturas das frases. Ao nascer ele é capaz de discriminar todos os sons, e à medida em que cresce essa habilidade se restringe a língua materna. Assim, suas competências linguísticas vão se desenvolvendo ao passar do tempo a ponto de que aos 9 meses de idade já é possível integrar informações e compreender a organização da língua, por isso, a partir dessa idade começam as trocas efetivas entre o bebe e o adulto. (BAGETTI, 2009)</p>
-                                        <p><b style={{ color: '#038C3E' }}>Já parou para pensar sobre a nossa capacidade de se comunicar por uma língua?</b> Juntamos sons de modo a formarem unidades sonoras com significado, as palavras, e  formamos frases nunca antes faladas e mesmo assim aqueles que estão ao nosso redor nos entendem! Nos comunicamos de forma tão complexa e única e tudo isso graças à linguagem!</p>
-                                    </div>
+        <Tab.Container 
+            id="left-tabs-example" 
+            activeKey={tabKey}
+            onSelect={(k) => setTabKey(k)}>
+            <Row>
+                <Col sm={3}>
+                    <Nav className="flex-column left-tab-menu">
+                        <h1>Desenvolvimento da Linguagem</h1>
+                        <Nav.Item>
+                            <Nav.Link eventKey="comunicacao-infantil" className="tab-button">Comunicação Infantil</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="como-ajudar-a-crianca" className="tab-button">Como ajudar a criança?</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="esperado-por-idade" className="tab-button">O esperado por idade</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="sinais-de-alerta" className="tab-button">Sinais de alerta!</Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+                </Col>
+                <Col sm={9}>
+                    <Tab.Content className="text-area">
+                        <Tab.Pane eventKey="comunicacao-infantil">
+                            <ChildCommunication onTabChange={setTabKey}/>
+                        </Tab.Pane>
+                        <Tab.Pane eventKey="como-ajudar-a-crianca">
+                            <div className="text-container-2 d-none">
+                                <p className="text-title">Como auxiliar a criança em sua comunicação?</p>
+                                <div className="text-body">
+                                    <p dangerouslySetInnerHTML={{ __html: tips[currentTipIndex] }}></p>
                                 </div>
-                            </Tab.Pane>
-                            <Tab.Pane eventKey="idx-2">
-                                <div className="text-container-2">
-                                    <p className="text-title">Como auxiliar a criança em sua comunicação?</p>
-                                    <div className="text-body">
-                                        <p dangerouslySetInnerHTML={{ __html: tips[currentTipIndex] }}></p>
-                                    </div>
-                                    <Pagination size="sm" className="pag-bar">
-                                        <Pagination.Prev
-                                            onClick={() => {
-                                                changePage(currentTipIndex - 1)
-                                            }}
-                                            disabled={currentTipIndex === 0}
-                                        />
-                                        {tips.map(tip => {
-                                            return <Pagination.Item className="desktop-only" key={tip} onClick={(e) => { changePage(Number(e.target.text)) }}> {tips.indexOf(tip)} </Pagination.Item>
-                                        })}
-                                        <Pagination.Next
-                                            onClick={() => {
-                                                changePage(currentTipIndex + 1)
-                                            }}
-                                            disabled={currentTipIndex === tips.length - 1}
-                                        />
-                                    </Pagination>
+                                <Pagination size="sm" className="pag-bar">
+                                    <Pagination.Prev
+                                        onClick={() => {
+                                            changePage(currentTipIndex - 1)
+                                        }}
+                                        disabled={currentTipIndex === 0}
+                                    />
+                                    {tips.map(tip => {
+                                        return <Pagination.Item className="desktop-only" key={tip} onClick={(e) => { changePage(Number(e.target.text)) }}> {tips.indexOf(tip)} </Pagination.Item>
+                                    })}
+                                    <Pagination.Next
+                                        onClick={() => {
+                                            changePage(currentTipIndex + 1)
+                                        }}
+                                        disabled={currentTipIndex === tips.length - 1}
+                                    />
+                                </Pagination>
+                            </div>
+                        </Tab.Pane>
+                        <Tab.Pane eventKey="esperado-por-idade">
+                            <div className="text-container-3 d-none">
+                                <p className="text-title">O que é esperado por cada idade?</p>
+                                <div className="text-body">
+                                    <p>
+                                        O desenvolvimento da criança é uma preocupação de mães e pais. Para entender o que não está de acordo com o esperado, é preciso entender primeiro o que é comum no desenvolvimento.
+                                        Os marcos desenvolvimentais são parâmetros que indicam por idade o desenvolvimento de crianças típicas, ou seja, sem alterações.
+                                        <b style={{ color: '#DE4E8D' }}> Mas “cada criança tem o seu tempo’, certo?!</b>
+                                    </p>
+                                    <p>
+                                        <b style={{ color: '#038C3E' }}>Cuidado com essa afirmação!</b> O ritmo individual de cada criança influencia na forma que ela desenvolve a linguagem.
+                                        Porém, <b style={{ color: '#F28F05' }}>existe uma idade adequada no desenvolvimento típico (os marcos do desenvolvimento)</b> que esperamos que a criança já consiga ter certas habilidades comunicativas. Quando observado que a criança não atingiu essas expectativas, ela precisa ser avaliada, pois é um indicativo que ela pode apresentar algum atraso ou transtorno de linguagem!
+                                        Quanto antes começar a intervenção melhor! Em caso de qualquer dúvida sobre a comunicação não espere para procurar um fonoaudiólogo. (PANES; CORRÊA; MAXIMINO, 2018)
+                                    </p>
+                                    <p>
+                                        <b style={{ color: '#F23229' }}>
+                                            Confira o que é esperado da criança de acordo com sua idade:
+                                        </b>
+                                    </p>
+                                    <Accordion>
+                                        <Accordion.Item eventKey="0">
+                                            <Accordion.Header>0 a 6 meses</Accordion.Header>
+                                            <Accordion.Body>
+                                                <ul>
+                                                    <li>Quando recém nascido o bebê chora como consequência de dor e fome, ele se acalma com a voz da mãe e se assusta com sons altos. </li>
+                                                    <li>Por volta dos 2 e 3 meses o choro do bebê se torna diferenciado, sendo assim, a partir do choro é possível perceber quando ele está com fome, dor ou até mesmo fazendo birra. Surgem vocalizações e sorrisos demonstrando prazer.</li>
+                                                    <li>As vocalizações variam em tom, volume e duração.</li>
+                                                    <li>Os bebês aos 3 meses já procuram de onde vêm os sons e prestam atenção a eles, respondendo quando alguém fala com ele através do olhar, sorriso e vocalizações e manifesta suas vontades apontando para os objetos e procura o olhar do cuidador, também já identificam a voz dos pais.</li>
+                                                    <li>Antes dos  6 meses o bebê balbucia repetindo sílabas iguais (papapa), após essa idade o balbucio ocorre com a junção de sílabas diferentes (padama).</li>
+                                                    <li>Em torno dos 6 meses de idade, é possível observar que a criança presta mais atenção às pessoas do que a objetos ou brinquedos.</li>
+                                                    <li>Ao brincar, a criança explora o objeto agarrando ele com a mão, o sacudindo, jogando e batendo.</li>
+                                                </ul>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="1">
+                                            <Accordion.Header>7 a 12 meses</Accordion.Header>
+                                            <Accordion.Body>
+                                                <ul>
+                                                    <li>O bebê participa mais ativamente da comunicação por meio de movimentos corporais, risos e expressões faciais.</li>
+                                                    <li>Já é capaz de imitar certos sons realizados pelos adultos.</li>
+                                                    <li>Aponta para objetos para expressar suas vontades.</li>
+                                                    <li>A partir dos 9 meses os comportamentos comunicativos são intencionais. O bebê atende ordens como “da tchau”, “bate palma” e "joga beijo”, dirige-se ao outro e participa de diálogos emitindo sons semelhantes ao de uma conversa, porém, sem significado.</li>
+                                                    <li>A criança, nessa faixa etária, começa a atender quando chamada pelo nome.</li>
+                                                </ul>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="2">
+                                            <Accordion.Header>1 a 2 anos</Accordion.Header>
+                                            <Accordion.Body>
+                                                <ul>
+                                                    <li>Aproximadamente com um ano a criança se comunica para expressar suas necessidades, nessa idade é esperado que surjam as primeiras palavras.</li>
+                                                    <li>Por volta de 1 ano e 6 meses, espera-se que a criança comece a produzir frases com dois ou três elementos sem que esses tenham conectivos entre si  (por exemplo: o(s), a(s), de, em, para, por, com e etc), como na frase “dá bola”.</li>
+                                                    <li>Compreende ordens simples e reconhece figuras e/ou objetos quando nomeados, por exemplo, quando perguntamos “Cadê o cachorro” ela aponta corretamente para o animal.</li>
+                                                    <li>Na brincadeira, ela usa os brinquedos de acordo com a função verdadeira dele, por exemplo, ao brincar com um carrinho, atribuirá a ele a função de carro, mas ainda não consegue criar histórias mais elaboradas que envolva o carrinho e nem vai usá-lo para desempenhar outra função, por exemplo, fingir que ele é uma nave espacial, ou um carro voador vindo do futuro. Além disso, ela gosta de explorar e descobrir novas coisas, como cheiros, texturas, sons e movimentos  dos objetos.</li>
+                                                </ul>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="3">
+                                            <Accordion.Header>2 anos e 1 mês a 3 anos</Accordion.Header>
+                                            <Accordion.Body>
+                                                <ul>
+                                                    <li>A criança com essa idade forma frases simples com 3 ou 4 palavras e usa corretamente os pronomes eu, você, ele, ela, esse e meu.</li>
+                                                    <li>A criança faz frases negativas e interrogativas com “que” e “onde”.</li>
+                                                    <li>No que diz respeito a brincar, a criança já tem imaginação para criar histórias e usar objetos conforme a sua imaginação, por exemplo, ao brincar finge que um sapato é um carro. Ela brinca também imitando os adultos, como nas brincadeiras de casinha, professor e médico.</li>
+                                                    <li>Consegue narrar situações concretas com o auxílio de perguntas feitas por adultos e mantém conversas curtas.</li>
+                                                </ul>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="4">
+                                            <Accordion.Header>3 anos e 1 mês a 4 anos</Accordion.Header>
+                                            <Accordion.Body>
+                                                <ul>
+                                                    <li>Nessa idade a criança produz frases com 6 palavras.</li>
+                                                    <li>Faz perguntas com “quem” e “qual”.</li>
+                                                    <li>Usa corretamente os tempos verbais presente, passado e futuro composto (vai brincar), podendo ainda haver erros que serão superados gradativamente.</li>
+                                                    <li>Utiliza o artigo fazendo a concordância correta (o/os/a/as). Ex: A menina / as bonecas/ o biscoito/ os carrinhos.</li>
+                                                    <li>Sua capacidade de compreensão é maior do que a de expressão, assim ela compreende quase tudo que o adulto fala e ao falar se faz entender.</li>
+                                                    <li>Compreende duas ordens que não estão relacionadas entre si, por exemplo, “escove os dentes e bote o casaco”.</li>
+                                                    <li>Conta histórias com início meio e fim de forma reduzida, podem incluir na narrativa fatos não verdadeiros.</li>
+                                                    <li>Faz frases negativas corretamente.</li>
+                                                    <li>Gosta de cantar e brincar com palavras e sons.</li>
+                                                </ul>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="5">
+                                            <Accordion.Header>4 anos e 1 mês a 5 anos</Accordion.Header>
+                                            <Accordion.Body>
+                                                <ul>
+                                                    <li>A criança desta idade consegue formar frases com estruturas mais complexas que expressam condições e circunstâncias como: “se fizer sol eu vou brincar”, “eu vou brincar quando chegar em casa”</li>
+                                                    <li>Seguem até 3 comandos diferentes, por exemplo, “escove o dente, calce o tênis e pegue a mochila”.</li>
+                                                    <li>Em sua fala já estão presentes quase todos os sons da fala, porém, o /r/ fraco de “cara”, é adquirido em média com 4 anos e 2 meses, então é normal que as crianças cometam erros ao produzir palavras com esse som, por exemplo, ao falar “chora” podem produzir “chola” ou “choa”.</li>
+                                                    <li>Até aos 5 anos as crianças adquirem palavras com encontros consonantais, por exemplo, “branco” e “plano”.</li>
+                                                    <li>Fala corretamente, mas pode errar ainda alguns verbos irregulares pouco utilizados, como “ouço”, eu “ouvo” bem.</li>
+                                                    <li>Narram histórias e recontam narrações de forma mais global, na ordem correta dos acontecimentos.</li>
+                                                    <li>Gostam de brincar em grupo, de imitar personagens e brincar de faz-de-conta.</li>
+                                                </ul>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="6">
+                                            <Accordion.Header>5 anos e 1 mês a 6 anos</Accordion.Header>
+                                            <Accordion.Body>
+                                                <ul>
+                                                    <li>As crianças, nesta idade, formam frases complexas e possuem todos os sons da língua, portanto não é esperado mais trocas de sons na sua fala.</li>
+                                                    <li>A criança tem fala fluente e coerente, assim, as histórias contadas ficam mais elaboradas e detalhadas.</li>
+                                                    <li>Nessa idade, é esperado que identifiquem as letras do próprio nome e conheçam os números. Ao se relacionar com adultos ou outras crianças, mantém diálogos mais extensos e conversa com mais de uma pessoa ao mesmo tempo.</li>
+                                                </ul>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="7">
+                                            <Accordion.Header>6 a 9 anos</Accordion.Header>
+                                            <Accordion.Body>
+                                                <ul>
+                                                    <li>Adquirem a partir dos 6 anos estruturas de piadas e adivinhações, porém, ainda é difícil para elas entender o significado implícito das frases, como as metáforas.</li>
+                                                    <li>Aos 6 anos o processo de aquisição se estabiliza, o aprendizado de novas palavras depende do ambiente em que ela está inserida. Dessa forma, a criança está pronta para ser alfabetizada.</li>
+                                                    <li>A criança conversa respeitando a hora adequada de falar, consegue mudar de assunto, e se autocorrigir e reestruturar a fala para se fazer entender.</li>
+                                                    <li>São capazes de produzir frases na voz passiva, por exemplo, “o carteiro foi mordido pelo cachorro”.</li>
+                                                    <li>Usa a linguagem dependendo do contexto e com quem está falando.</li>
+                                                </ul>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                    </Accordion>
                                 </div>
-                            </Tab.Pane>
-                            <Tab.Pane eventKey="idx-3">
-                                <div className="text-container-3">
-                                    <p className="text-title">O que é esperado por cada idade?</p>
-                                    <div className="text-body">
-                                        <p>
-                                            O desenvolvimento da criança é uma preocupação de mães e pais. Para entender o que não está de acordo com o esperado, é preciso entender primeiro o que é comum no desenvolvimento.
-                                            Os marcos desenvolvimentais são parâmetros que indicam por idade o desenvolvimento de crianças típicas, ou seja, sem alterações.
-                                            <b style={{ color: '#DE4E8D' }}> Mas “cada criança tem o seu tempo’, certo?!</b>
-                                        </p>
-                                        <p>
-                                            <b style={{ color: '#038C3E' }}>Cuidado com essa afirmação!</b> O ritmo individual de cada criança influencia na forma que ela desenvolve a linguagem.
-                                            Porém, <b style={{ color: '#F28F05' }}>existe uma idade adequada no desenvolvimento típico (os marcos do desenvolvimento)</b> que esperamos que a criança já consiga ter certas habilidades comunicativas. Quando observado que a criança não atingiu essas expectativas, ela precisa ser avaliada, pois é um indicativo que ela pode apresentar algum atraso ou transtorno de linguagem!
-                                            Quanto antes começar a intervenção melhor! Em caso de qualquer dúvida sobre a comunicação não espere para procurar um fonoaudiólogo. (PANES; CORRÊA; MAXIMINO, 2018)
-                                        </p>
-                                        <p>
-                                            <b style={{ color: '#F23229' }}>
-                                                Confira o que é esperado da criança de acordo com sua idade:
-                                            </b>
-                                        </p>
-                                        <Accordion>
-                                            <Accordion.Item eventKey="0">
-                                                <Accordion.Header>0 a 6 meses</Accordion.Header>
-                                                <Accordion.Body>
-                                                    <ul>
-                                                        <li>Quando recém nascido o bebê chora como consequência de dor e fome, ele se acalma com a voz da mãe e se assusta com sons altos. </li>
-                                                        <li>Por volta dos 2 e 3 meses o choro do bebê se torna diferenciado, sendo assim, a partir do choro é possível perceber quando ele está com fome, dor ou até mesmo fazendo birra. Surgem vocalizações e sorrisos demonstrando prazer.</li>
-                                                        <li>As vocalizações variam em tom, volume e duração.</li>
-                                                        <li>Os bebês aos 3 meses já procuram de onde vêm os sons e prestam atenção a eles, respondendo quando alguém fala com ele através do olhar, sorriso e vocalizações e manifesta suas vontades apontando para os objetos e procura o olhar do cuidador, também já identificam a voz dos pais.</li>
-                                                        <li>Antes dos  6 meses o bebê balbucia repetindo sílabas iguais (papapa), após essa idade o balbucio ocorre com a junção de sílabas diferentes (padama).</li>
-                                                        <li>Em torno dos 6 meses de idade, é possível observar que a criança presta mais atenção às pessoas do que a objetos ou brinquedos.</li>
-                                                        <li>Ao brincar, a criança explora o objeto agarrando ele com a mão, o sacudindo, jogando e batendo.</li>
-                                                    </ul>
-                                                </Accordion.Body>
-                                            </Accordion.Item>
-                                            <Accordion.Item eventKey="1">
-                                                <Accordion.Header>7 a 12 meses</Accordion.Header>
-                                                <Accordion.Body>
-                                                    <ul>
-                                                        <li>O bebê participa mais ativamente da comunicação por meio de movimentos corporais, risos e expressões faciais.</li>
-                                                        <li>Já é capaz de imitar certos sons realizados pelos adultos.</li>
-                                                        <li>Aponta para objetos para expressar suas vontades.</li>
-                                                        <li>A partir dos 9 meses os comportamentos comunicativos são intencionais. O bebê atende ordens como “da tchau”, “bate palma” e "joga beijo”, dirige-se ao outro e participa de diálogos emitindo sons semelhantes ao de uma conversa, porém, sem significado.</li>
-                                                        <li>A criança, nessa faixa etária, começa a atender quando chamada pelo nome.</li>
-                                                    </ul>
-                                                </Accordion.Body>
-                                            </Accordion.Item>
-                                            <Accordion.Item eventKey="2">
-                                                <Accordion.Header>1 a 2 anos</Accordion.Header>
-                                                <Accordion.Body>
-                                                    <ul>
-                                                        <li>Aproximadamente com um ano a criança se comunica para expressar suas necessidades, nessa idade é esperado que surjam as primeiras palavras.</li>
-                                                        <li>Por volta de 1 ano e 6 meses, espera-se que a criança comece a produzir frases com dois ou três elementos sem que esses tenham conectivos entre si  (por exemplo: o(s), a(s), de, em, para, por, com e etc), como na frase “dá bola”.</li>
-                                                        <li>Compreende ordens simples e reconhece figuras e/ou objetos quando nomeados, por exemplo, quando perguntamos “Cadê o cachorro” ela aponta corretamente para o animal.</li>
-                                                        <li>Na brincadeira, ela usa os brinquedos de acordo com a função verdadeira dele, por exemplo, ao brincar com um carrinho, atribuirá a ele a função de carro, mas ainda não consegue criar histórias mais elaboradas que envolva o carrinho e nem vai usá-lo para desempenhar outra função, por exemplo, fingir que ele é uma nave espacial, ou um carro voador vindo do futuro. Além disso, ela gosta de explorar e descobrir novas coisas, como cheiros, texturas, sons e movimentos  dos objetos.</li>
-                                                    </ul>
-                                                </Accordion.Body>
-                                            </Accordion.Item>
-                                            <Accordion.Item eventKey="3">
-                                                <Accordion.Header>2 anos e 1 mês a 3 anos</Accordion.Header>
-                                                <Accordion.Body>
-                                                    <ul>
-                                                        <li>A criança com essa idade forma frases simples com 3 ou 4 palavras e usa corretamente os pronomes eu, você, ele, ela, esse e meu.</li>
-                                                        <li>A criança faz frases negativas e interrogativas com “que” e “onde”.</li>
-                                                        <li>No que diz respeito a brincar, a criança já tem imaginação para criar histórias e usar objetos conforme a sua imaginação, por exemplo, ao brincar finge que um sapato é um carro. Ela brinca também imitando os adultos, como nas brincadeiras de casinha, professor e médico.</li>
-                                                        <li>Consegue narrar situações concretas com o auxílio de perguntas feitas por adultos e mantém conversas curtas.</li>
-                                                    </ul>
-                                                </Accordion.Body>
-                                            </Accordion.Item>
-                                            <Accordion.Item eventKey="4">
-                                                <Accordion.Header>3 anos e 1 mês a 4 anos</Accordion.Header>
-                                                <Accordion.Body>
-                                                    <ul>
-                                                        <li>Nessa idade a criança produz frases com 6 palavras.</li>
-                                                        <li>Faz perguntas com “quem” e “qual”.</li>
-                                                        <li>Usa corretamente os tempos verbais presente, passado e futuro composto (vai brincar), podendo ainda haver erros que serão superados gradativamente.</li>
-                                                        <li>Utiliza o artigo fazendo a concordância correta (o/os/a/as). Ex: A menina / as bonecas/ o biscoito/ os carrinhos.</li>
-                                                        <li>Sua capacidade de compreensão é maior do que a de expressão, assim ela compreende quase tudo que o adulto fala e ao falar se faz entender.</li>
-                                                        <li>Compreende duas ordens que não estão relacionadas entre si, por exemplo, “escove os dentes e bote o casaco”.</li>
-                                                        <li>Conta histórias com início meio e fim de forma reduzida, podem incluir na narrativa fatos não verdadeiros.</li>
-                                                        <li>Faz frases negativas corretamente.</li>
-                                                        <li>Gosta de cantar e brincar com palavras e sons.</li>
-                                                    </ul>
-                                                </Accordion.Body>
-                                            </Accordion.Item>
-                                            <Accordion.Item eventKey="5">
-                                                <Accordion.Header>4 anos e 1 mês a 5 anos</Accordion.Header>
-                                                <Accordion.Body>
-                                                    <ul>
-                                                        <li>A criança desta idade consegue formar frases com estruturas mais complexas que expressam condições e circunstâncias como: “se fizer sol eu vou brincar”, “eu vou brincar quando chegar em casa”</li>
-                                                        <li>Seguem até 3 comandos diferentes, por exemplo, “escove o dente, calce o tênis e pegue a mochila”.</li>
-                                                        <li>Em sua fala já estão presentes quase todos os sons da fala, porém, o /r/ fraco de “cara”, é adquirido em média com 4 anos e 2 meses, então é normal que as crianças cometam erros ao produzir palavras com esse som, por exemplo, ao falar “chora” podem produzir “chola” ou “choa”.</li>
-                                                        <li>Até aos 5 anos as crianças adquirem palavras com encontros consonantais, por exemplo, “branco” e “plano”.</li>
-                                                        <li>Fala corretamente, mas pode errar ainda alguns verbos irregulares pouco utilizados, como “ouço”, eu “ouvo” bem.</li>
-                                                        <li>Narram histórias e recontam narrações de forma mais global, na ordem correta dos acontecimentos.</li>
-                                                        <li>Gostam de brincar em grupo, de imitar personagens e brincar de faz-de-conta.</li>
-                                                    </ul>
-                                                </Accordion.Body>
-                                            </Accordion.Item>
-                                            <Accordion.Item eventKey="6">
-                                                <Accordion.Header>5 anos e 1 mês a 6 anos</Accordion.Header>
-                                                <Accordion.Body>
-                                                    <ul>
-                                                        <li>As crianças, nesta idade, formam frases complexas e possuem todos os sons da língua, portanto não é esperado mais trocas de sons na sua fala.</li>
-                                                        <li>A criança tem fala fluente e coerente, assim, as histórias contadas ficam mais elaboradas e detalhadas.</li>
-                                                        <li>Nessa idade, é esperado que identifiquem as letras do próprio nome e conheçam os números. Ao se relacionar com adultos ou outras crianças, mantém diálogos mais extensos e conversa com mais de uma pessoa ao mesmo tempo.</li>
-                                                    </ul>
-                                                </Accordion.Body>
-                                            </Accordion.Item>
-                                            <Accordion.Item eventKey="7">
-                                                <Accordion.Header>6 a 9 anos</Accordion.Header>
-                                                <Accordion.Body>
-                                                    <ul>
-                                                        <li>Adquirem a partir dos 6 anos estruturas de piadas e adivinhações, porém, ainda é difícil para elas entender o significado implícito das frases, como as metáforas.</li>
-                                                        <li>Aos 6 anos o processo de aquisição se estabiliza, o aprendizado de novas palavras depende do ambiente em que ela está inserida. Dessa forma, a criança está pronta para ser alfabetizada.</li>
-                                                        <li>A criança conversa respeitando a hora adequada de falar, consegue mudar de assunto, e se autocorrigir e reestruturar a fala para se fazer entender.</li>
-                                                        <li>São capazes de produzir frases na voz passiva, por exemplo, “o carteiro foi mordido pelo cachorro”.</li>
-                                                        <li>Usa a linguagem dependendo do contexto e com quem está falando.</li>
-                                                    </ul>
-                                                </Accordion.Body>
-                                            </Accordion.Item>
-                                        </Accordion>
-                                    </div>
-                                </div>
-                            </Tab.Pane>
-                        </Tab.Content>
-                    </Col>
-                </Row>
-            </Tab.Container>
-        </>
+                            </div>
+                        </Tab.Pane>
+                    </Tab.Content>
+                </Col>
+            </Row>
+        </Tab.Container>
     );
 }

@@ -28,3 +28,7 @@ p{
         display: none;
     }
 }
+
+sup {
+    font-weight: bold;
+}

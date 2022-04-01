@@ -1,37 +1,17 @@
-
 .navbar{
     background-color: #F23229;
+    height: 12vh;
 }
-.nav-container{
-    display: flex; 
-    justify-content: flex-end;
-}
-
-.dropdown-menu.show {
+.header-item {
+    max-width: 134px;
+    margin: auto;
+    text-align: center;
+    margin-left: 30px;
+    display: inline-block;
     color: white;
-    background-color: #F23229;
+    text-decoration: none;
 }
-a.dropdown-item{
+.header-item:hover{
+    font-weight: bolder;
     color: white;
-}
-
-
-.dropdown-toggle::after{ color:white; }
-
-#basic-nav-dropdown{
-    margin: 0;
-    padding: 0;
-    padding-left: 15px;
-    padding-top: 5px;
-    color: white;
-}
-
-#basic-nav-dropdown a:hover{
-    background-color: #fff;
-    color: black;
-}
-
-.dropdown-toogle :hover{
-    background-color: #fff;
-    color: black;
 }

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Header from '../../components/Header';
 import './index.css';
 import { Button, Spinner } from 'react-bootstrap';
 import { send } from '@emailjs/browser';
@@ -16,10 +15,10 @@ export default function Contact() {
     const [message, setMessage] = useState('');
 
     const canSendEmail = () => {
-        if(cookies.dolc === undefined){
+        if (cookies.dolc === undefined) {
             setCookie('dolc', new Date().getTime());
             return true;
-        } 
+        }
         else {
             const lastContactDate = new Date(Number(cookies.dolc));
 
@@ -27,7 +26,7 @@ export default function Contact() {
             const sevenDaysBack = new Date();
             sevenDaysBack.setDate(today.getDate() - 7);
 
-            if(sevenDaysBack > lastContactDate) return true;
+            if (sevenDaysBack > lastContactDate) return true;
         }
         return false;
     }
@@ -51,7 +50,7 @@ export default function Contact() {
                 process.env.REACT_APP_EMAIL_ID_USER,
             ];
 
-            if(canSendEmail()){
+            if (canSendEmail()) {
                 const response = await send(...params);
                 if (response.status === 200) {
                     toast.success("Sucesso! Contato enviado.")
@@ -73,72 +72,69 @@ export default function Contact() {
     }
 
     return (
-        <>
-            <Header />
-            <section className="contact">
-                <ToastContainer />
-                <h1 className="title">Contato</h1>
-                <div className="subtitle">
-                    <h4>Caso queira saber mais sobre o Palavrinha, tirar dúvidas ou compartilhar conosco alguma informação bacana, envie-nos uma mensagem.</h4>
-                </div>
-                <form onSubmit={sendEmail}>
-                    <div className="input-div d-flex">
-                        <div className="input-div">
-                            <h5>Seu nome:</h5>
-                            <input
-                                placeholder="Insira aqui seu nome..."
-                                required
-                                minLength={3}
-                                style={{ width: 250 }}
-                                onChange={(e) => setName(e.target.value)}
-                            />
-                        </div>
-                        <div className="input-div">
-                            <h5>Seu e-mail:</h5>
-                            <input
-                                placeholder="Insira aqui seu endereço de mail..."
-                                required
-                                type="email"
-                                style={{ width: 350 }}
-                                onChange={(e) => setEmail(e.target.value)}
-                            />
-                        </div>
-                    </div>
-                    <div className="input-div" >
-                        <h5>Sua mensagem:</h5>
-                        <textarea
-                            placeholder="Digite aqui a sua mensagem..."
-                            rows={12}
+        <section className="contact">
+            <ToastContainer />
+            <h1 className="title">Contato</h1>
+            <div className="subtitle">
+                <h4>Caso queira saber mais sobre o Palavrinha, tirar dúvidas ou compartilhar conosco alguma informação bacana, envie-nos uma mensagem.</h4>
+            </div>
+            <form onSubmit={sendEmail}>
+                <div className="input-div d-flex">
+                    <div className="input-div">
+                        <h5>Seu nome:</h5>
+                        <input
+                            placeholder="Insira aqui seu nome..."
                             required
                             minLength={3}
-                            onChange={(e) => setMessage(e.target.value)}
+                            style={{ width: 250 }}
+                            onChange={(e) => setName(e.target.value)}
                         />
                     </div>
-                    <div className="d-flex justify-content-center">
-                        <Button
-                            variant="primary"
-                            className="button"
-                            type="submit"
-                            disabled={isLoading}
-                        >
-                            {
-                                !isLoading ?
-                                    <>
-                                        <span style={{visibility: 'hidden'}}><Spinner animation="border" size="sm" /></span>
-                                        <span style={{marginRight: 15}}>Enviar</span>
-                                    </>
-                                    :
-                                    <>
+                    <div className="input-div">
+                        <h5>Seu e-mail:</h5>
+                        <input
+                            placeholder="Insira aqui seu endereço de mail..."
+                            required
+                            type="email"
+                            style={{ width: 350 }}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+                    </div>
+                </div>
+                <div className="input-div" >
+                    <h5>Sua mensagem:</h5>
+                    <textarea
+                        placeholder="Digite aqui a sua mensagem..."
+                        rows={12}
+                        required
+                        minLength={3}
+                        onChange={(e) => setMessage(e.target.value)}
+                    />
+                </div>
+                <div className="d-flex justify-content-center">
+                    <Button
+                        variant="primary"
+                        className="button"
+                        type="submit"
+                        disabled={isLoading}
+                    >
+                        {
+                            !isLoading ?
+                                <>
+                                    <span style={{ visibility: 'hidden' }}><Spinner animation="border" size="sm" /></span>
+                                    <span style={{ marginRight: 15 }}>Enviar</span>
+                                </>
+                                :
+                                <>
                                     <span>
                                         <Spinner animation="border" size="sm" /></span>
-                                        <span style={{marginRight: 15}}>Enviar</span>
-                                    </>
-                            }
+                                    <span style={{ marginRight: 15 }}>Enviar</span>
+                                </>
+                        }
 
-                        </Button>
-                    </div>
-                </form>
-            </section>
-        </>
+                    </Button>
+                </div>
+            </form>
+        </section>
     )
 }
