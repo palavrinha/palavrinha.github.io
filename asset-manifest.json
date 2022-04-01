@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0f763bcb.css",
-    "main.js": "/static/js/main.a6f2141b.js",
+    "main.js": "/static/js/main.ec64aea1.js",
     "static/media/sisters-reading.png": "/static/media/sisters-reading.cac4398a15532182bf5c.png",
     "static/media/sisters-drawing.png": "/static/media/sisters-drawing.9961b16ebe2a5b0f8e18.png",
     "static/media/father-and-daughter.png": "/static/media/father-and-daughter.58840350244aac141f7f.png",
@@ -12,10 +12,10 @@
     "static/media/lucas-araujo-emmerich.jpg": "/static/media/lucas-araujo-emmerich.2987cf3b9e9a37733f4a.jpg",
     "index.html": "/index.html",
     "main.0f763bcb.css.map": "/static/css/main.0f763bcb.css.map",
-    "main.a6f2141b.js.map": "/static/js/main.a6f2141b.js.map"
+    "main.ec64aea1.js.map": "/static/js/main.ec64aea1.js.map"
   },
   "entrypoints": [
     "static/css/main.0f763bcb.css",
-    "static/js/main.a6f2141b.js"
+    "static/js/main.ec64aea1.js"
   ]
 }
