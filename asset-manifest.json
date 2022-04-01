@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.d4baa4d8.css",
-    "main.js": "/static/js/main.9a19414d.js",
+    "main.css": "/static/css/main.0f763bcb.css",
+    "main.js": "/static/js/main.a6f2141b.js",
     "static/media/sisters-reading.png": "/static/media/sisters-reading.cac4398a15532182bf5c.png",
     "static/media/sisters-drawing.png": "/static/media/sisters-drawing.9961b16ebe2a5b0f8e18.png",
     "static/media/father-and-daughter.png": "/static/media/father-and-daughter.58840350244aac141f7f.png",
+    "static/media/desenvolvimento-auditivo-da-criança-1.png": "/static/media/desenvolvimento-auditivo-da-criança-1.7ec0b2f9e5c4fddeede1.png",
     "static/media/patricia-do-valle-alves.png": "/static/media/patricia-do-valle-alves.4410eaa1120d3fd5ed94.png",
     "static/media/luma-heidenfelder-schwantes.png": "/static/media/luma-heidenfelder-schwantes.644ecb67e0742f4636be.png",
     "static/media/palavrinha-desktop-img.png": "/static/media/palavrinha-desktop-img.a75d356b002b9baf9137.png",
     "static/media/lucas-araujo-emmerich.jpg": "/static/media/lucas-araujo-emmerich.2987cf3b9e9a37733f4a.jpg",
     "index.html": "/index.html",
-    "main.d4baa4d8.css.map": "/static/css/main.d4baa4d8.css.map",
-    "main.9a19414d.js.map": "/static/js/main.9a19414d.js.map"
+    "main.0f763bcb.css.map": "/static/css/main.0f763bcb.css.map",
+    "main.a6f2141b.js.map": "/static/js/main.a6f2141b.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4baa4d8.css",
-    "static/js/main.9a19414d.js"
+    "static/css/main.0f763bcb.css",
+    "static/js/main.a6f2141b.js"
   ]
 }
