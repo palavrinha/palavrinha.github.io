@@ -4,8 +4,6 @@ import './index.css';
 import desenvolvimentoAuditivoDaCrianca from '../../../assets/language-development/desenvolvimento-auditivo-da-criança-1.png'
 
 export default function ChildCommunication(props) {
-    // this.accordionElement.click();
-    
     return (
         <div className="text-container">
             <h1 className="text-title">Comunicação <br /> Infantil</h1>

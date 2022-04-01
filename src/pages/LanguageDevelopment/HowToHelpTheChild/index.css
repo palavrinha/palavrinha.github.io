@@ -1,0 +1,80 @@
+.container-child-help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white !important;
+    margin-right: 40px;
+    position: relative;
+}
+
+.container-child-help .text-title{
+    font-size: 30px;
+    margin-top: 5px;
+    width: 100%;
+    font-family: 'Sigmar One';
+    color: #F28F05;
+    text-align: center;
+}
+
+.container-child-help .text-sub-title{
+    font: 400 16px 'Montserrat', sans-serif !important;
+}
+
+.container-child-help .text-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #038C3E !important;
+    color: white;
+    font: 14px 'Montserrat', sans-serif !important;
+    overflow-y: auto;
+}
+
+.container-child-help .text-body ul > li{
+    text-align: left;
+}
+
+.container-child-help .text-body div{
+    padding: 40px;
+    color: white;
+    height: 52vh;
+    font-size: 16px;
+}
+
+.container-child-help .text-body div a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.next-icon, .prev-icon{
+    position: absolute;
+    cursor: pointer;
+}
+
+.next-icon{
+    right: 10px;
+}
+.prev-icon{
+    left: 10px;
+}
+
+.list-tips li {
+    font-size: 14px;
+}
+
+.references {
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+.references span {
+    font: italic 400 17px 'Montserrat', sans-serif  !important;
+}
+.references span::before {
+    content: '.';
+    font-size: 0;
+    display: block;
+    line-height: 20px;
+}
