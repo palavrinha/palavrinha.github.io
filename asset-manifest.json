@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.118af7f7.css",
-    "main.js": "/static/js/main.dbff47c0.js",
+    "main.css": "/static/css/main.a4dcf70d.css",
+    "main.js": "/static/js/main.7e351f4a.js",
     "static/media/sisters-reading.png": "/static/media/sisters-reading.cac4398a15532182bf5c.png",
     "static/media/sisters-drawing.png": "/static/media/sisters-drawing.9961b16ebe2a5b0f8e18.png",
     "static/media/father-and-daughter.png": "/static/media/father-and-daughter.58840350244aac141f7f.png",
@@ -12,11 +12,11 @@
     "static/media/lucas-araujo-emmerich.jpg": "/static/media/lucas-araujo-emmerich.2987cf3b9e9a37733f4a.jpg",
     "static/media/quadro-de-fonemas.png": "/static/media/quadro-de-fonemas.cba64fa67576dc249d6a.png",
     "index.html": "/index.html",
-    "main.118af7f7.css.map": "/static/css/main.118af7f7.css.map",
-    "main.dbff47c0.js.map": "/static/js/main.dbff47c0.js.map"
+    "main.a4dcf70d.css.map": "/static/css/main.a4dcf70d.css.map",
+    "main.7e351f4a.js.map": "/static/js/main.7e351f4a.js.map"
   },
   "entrypoints": [
-    "static/css/main.118af7f7.css",
-    "static/js/main.dbff47c0.js"
+    "static/css/main.a4dcf70d.css",
+    "static/js/main.7e351f4a.js"
   ]
 }
