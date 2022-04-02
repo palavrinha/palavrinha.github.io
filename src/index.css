@@ -17,6 +17,10 @@ p{
     text-indent: 30px;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .flex-box {
     display: flex;
     justify-content: center;

@@ -5,9 +5,10 @@ import { useState } from 'react';
 import ChildCommunication from './ChildCommunication';
 import HowToHelpTheChild from './HowToHelpTheChild';
 import TheExpectedByAge from './TheExpectedByAge';
+import AlertSigns from './AlertSigns';
 
 export default function LanguageDevelopment() {
-    const [tabKey, setTabKey] = useState('comunicacao-infantil');
+    const [tabKey, setTabKey] = useState('child-communication');
 
     return (
         <Tab.Container 
@@ -19,29 +20,32 @@ export default function LanguageDevelopment() {
                     <Nav className="flex-column left-tab-menu">
                         <h1>Desenvolvimento da Linguagem</h1>
                         <Nav.Item>
-                            <Nav.Link eventKey="comunicacao-infantil" className="tab-button">Comunicação Infantil</Nav.Link>
+                            <Nav.Link eventKey="child-communication" className="tab-button">Comunicação Infantil</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="como-ajudar-a-crianca" className="tab-button">Como ajudar a criança?</Nav.Link>
+                            <Nav.Link eventKey="how-to-help-the-child" className="tab-button">Como ajudar a criança?</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="esperado-por-idade" className="tab-button">O esperado por idade</Nav.Link>
+                            <Nav.Link eventKey="the-expected-by-age" className="tab-button">O esperado por idade</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="sinais-de-alerta" className="tab-button">Sinais de alerta!</Nav.Link>
+                            <Nav.Link eventKey="alert-signs" className="tab-button">Sinais de alerta!</Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Col>
                 <Col sm={9}>
                     <Tab.Content className="text-area">
-                        <Tab.Pane eventKey="comunicacao-infantil">
+                        <Tab.Pane eventKey="child-communication">
                             <ChildCommunication onTabChange={setTabKey}/>
                         </Tab.Pane>
-                        <Tab.Pane eventKey="como-ajudar-a-crianca">
-                            <HowToHelpTheChild  onTabChange={setTabKey}/>
+                        <Tab.Pane eventKey="how-to-help-the-child">
+                            <HowToHelpTheChild onTabChange={setTabKey}/>
                         </Tab.Pane>
-                        <Tab.Pane eventKey="esperado-por-idade">
-                            <TheExpectedByAge   onTabChange={setTabKey}/>
+                        <Tab.Pane eventKey="the-expected-by-age">
+                            <TheExpectedByAge  onTabChange={setTabKey}/>
+                        </Tab.Pane>
+                        <Tab.Pane eventKey="alert-signs">
+                            <AlertSigns        onTabChange={setTabKey}/>
                         </Tab.Pane>
                     </Tab.Content>
                 </Col>

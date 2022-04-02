@@ -1,0 +1,76 @@
+.alert-signs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white !important;
+    margin-right: 40px;
+}
+
+.alert-signs .text-title {
+    font-size: 30px;
+    margin-top: 15px;
+    font-family: 'Sigmar One';
+    color: #DE4E8D;
+    text-align: center;
+}
+
+.text-body p {
+    font-size: 17px;
+}
+
+.text-body .tab-link {
+    color: #DE4E8D !important;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.alert-signs-list {
+    height: 400px;
+    overflow: auto;
+    border: 2px solid #DE4E8D;
+}
+
+.alert-signs-list li {
+    font-size: 16px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.alert-signs-list::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.alert-signs-list::-webkit-scrollbar {
+    display: block;
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+.alert-signs-list::-webkit-scrollbar-thumb {
+    background-color: #FFF;
+    background-image: -webkit-gradient(linear,
+            40% 0%,
+            75% 84%,
+            from(#DE2E8D),
+            to(#DE3E8D),
+            color-stop(.6, #DE4E8D))
+}
+
+
+.references {
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+.references span {
+    font: italic 400 17px 'Montserrat', sans-serif  !important;
+}
+.references span::before {
+    content: '.';
+    font-size: 0;
+    display: block;
+    line-height: 20px;
+}

@@ -7,8 +7,8 @@
 }
 
 .expected-by-age .text-title{
-    font-size: 48px;
-    margin-top: 5px;
+    font-size: 30px;
+    margin-top: 15px;
     font-family: 'Sigmar One';
     color: #0588CB;
     text-align: center;
@@ -19,10 +19,6 @@
     margin-right: 40px;
     overflow-y: auto;
     height: 80%;
-}
-
-::-webkit-scrollbar {
-    display: none;
 }
 
 .references {

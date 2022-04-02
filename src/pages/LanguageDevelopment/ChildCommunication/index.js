@@ -6,7 +6,7 @@ import desenvolvimentoAuditivoDaCrianca from '../../../assets/language-developme
 export default function ChildCommunication(props) {
     return (
         <div className="text-container">
-            <h1 className="text-title">Comunicação <br /> Infantil</h1>
+            <h1 className="text-title">Comunicação Infantil</h1>
             <Accordion defaultActiveKey={['0']} alwaysOpen>
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>Linguagem oral</Accordion.Header>
@@ -234,10 +234,10 @@ export default function ChildCommunication(props) {
                             Não deixe de visitar em nosso site as sessões abaixo e, se surgir alguma dúvida, procure um fonoaudiólogo!
                         </span>
                         <span>
-                            <div className="tab-link" onClick={() => props.onTabChange('esperado-por-idade')}>🡥 <u>O que é esperado por idade no desenvolvimento da linguagem oral?</u></div>
+                            <div className="tab-link" onClick={() => props.onTabChange('the-expected-by-age')}>🡥 <u>O que é esperado por idade no desenvolvimento da linguagem oral?</u></div>
                         </span>
                         <span>
-                            <div className="tab-link" onClick={() => props.onTabChange('sinais-de-alerta')}>🡥 <u>Principais sinais de alerta</u></div>
+                            <div className="tab-link" onClick={() => props.onTabChange('alert-signs')}>🡥 <u>Principais sinais de alerta</u></div>
                         </span>
                     </Accordion.Body>
                 </Accordion.Item>
