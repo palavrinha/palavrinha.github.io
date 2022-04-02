@@ -1,14 +1,10 @@
 .expected-by-age {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white !important;
-    margin-right: 40px;
+    padding-right: 40px;
 }
 
 .expected-by-age .text-title{
     font-size: 30px;
-    margin-top: 15px;
+    padding-top: 15px;
     font-family: 'Sigmar One';
     color: #0588CB;
     text-align: center;
@@ -16,13 +12,10 @@
 
 .expected-by-age .text-body{
     font: 17px 'Montserrat', sans-serif !important;
-    margin-right: 40px;
     overflow-y: auto;
-    height: 80%;
 }
 
 .references {
-    padding-right: 40px;
     padding-bottom: 20px;
 }
 .references span {

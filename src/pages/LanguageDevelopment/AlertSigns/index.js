@@ -52,7 +52,7 @@ export default function AlertSigns(props) {
                     <li>Fala incompreensível aos quatro anos (com muitas trocas de sons) e substituições de sons na fala, as quais estão presentes após os 4 anos;</li>
                     <li>Quando a criança já está falando, apresenta a ordem das palavras alterada.</li>
                 </ul>
-                <p style={{ color: '#DE4E8D', fontWeight: 'bold', marginTop:50 }}>
+                <p style={{ color: '#DE4E8D', fontWeight: 'bold', marginTop: 50 }}>
                     Sinais de alerta referentes à linguagem escrita:
                 </p>
                 <p>

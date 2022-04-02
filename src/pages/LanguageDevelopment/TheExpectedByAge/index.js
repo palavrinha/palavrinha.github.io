@@ -5,7 +5,6 @@ import quadroDeFonemas from '../../../assets/language-development/quadro-de-fone
 
 export default function TheExpectedByAge() {
     return (
-
         <div className="expected-by-age">
             <p className="text-title">O que é esperado por cada idade?</p>
             <div className="text-body">
@@ -15,7 +14,7 @@ export default function TheExpectedByAge() {
                 </p>
                 <p>
                     Os marcos desenvolvimentais são parâmetros que indicam por idade o desenvolvimento de crianças típicas, ou seja,
-                    sem alterações, Mas “cada criança tem o seu tempo’, certo?! Cuidado com essa afirmação! O ritmo individual de cada
+                    sem alterações, Mas “cada criança tem o seu tempo”, certo?! Cuidado com essa afirmação! O ritmo individual de cada
                     criança influencia na forma que ela desenvolve a linguagem. Porém, existe uma idade adequada no
                     desenvolvimento típico (os marcos do desenvolvimento) que esperamos que a criança já consiga ter certas habilidades comunicativas.
                 </p>
@@ -149,7 +148,9 @@ export default function TheExpectedByAge() {
                 <p>
                     Abaixo, segue a ordem de aquisição dos sons no protuguês brasileiros<sup>5</sup> de forma simplificada e resumida.
                 </p>
-                <Image src={quadroDeFonemas} />
+                <p className="text-center">
+                    <Image src={quadroDeFonemas} style={{width: '50%'}}/>
+                </p>
                 <p>
                     Uma sugestão importante que possibilita a obtenção de informações sobre o desenvolvimento da criança,
                     não somente da linguagem e marcos no desenvolvimento,  mas sobre aspectos gerais do desenvolvimento,

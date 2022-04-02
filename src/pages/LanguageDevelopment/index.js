@@ -17,7 +17,7 @@ export default function LanguageDevelopment() {
             onSelect={(k) => setTabKey(k)}>
             <Row>
                 <Col sm={3}>
-                    <Nav className="flex-column left-tab-menu">
+                    <Nav className="left-tab-menu">
                         <h1>Desenvolvimento da Linguagem</h1>
                         <Nav.Item>
                             <Nav.Link eventKey="child-communication" className="tab-button">Comunicação Infantil</Nav.Link>
@@ -34,7 +34,7 @@ export default function LanguageDevelopment() {
                     </Nav>
                 </Col>
                 <Col sm={9}>
-                    <Tab.Content className="text-area">
+                    <Tab.Content>
                         <Tab.Pane eventKey="child-communication">
                             <ChildCommunication onTabChange={setTabKey}/>
                         </Tab.Pane>

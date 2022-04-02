@@ -5,7 +5,7 @@ import desenvolvimentoAuditivoDaCrianca from '../../../assets/language-developme
 
 export default function ChildCommunication(props) {
     return (
-        <div className="text-container">
+        <div className="child-communication">
             <h1 className="text-title">Comunicação Infantil</h1>
             <Accordion defaultActiveKey={['0']} alwaysOpen>
                 <Accordion.Item eventKey="0">
@@ -116,9 +116,9 @@ export default function ChildCommunication(props) {
                         <span>
                             Confira:
                         </span>
-                        <span>
-                            <Image src={desenvolvimentoAuditivoDaCrianca} />
-                        </span>
+                        <p className="text-center">
+                            <Image src={desenvolvimentoAuditivoDaCrianca} width="70%" />
+                        </p>
                         <span>
                             É sempre importante acompanhar o desenvolvimento da criança, principalmente nos primeiros anos de vida.
                             A Caderneta de Saúde da Criança (CSC) é um documento interessante para acompanhar o

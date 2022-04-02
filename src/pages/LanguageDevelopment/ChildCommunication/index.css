@@ -1,8 +1,9 @@
-.text-container {
-    padding-right: 40px;
+.child-communication {
+    width: 90%;
+    margin: auto;
 }
 
-.text-container .text-title {
+.child-communication .text-title {
     font-size: 30px;
     margin-top: 15px;
     font-family: 'Sigmar One';
@@ -35,22 +36,20 @@
     border: 1px red solid !important;
 }
 
-.text-container span,i {
+.child-communication span,i {
     font-size: 17px;
-    /* display: inline-block; */
-    /* text-indent: 40px; */
 }
 
-.text-container a {
+.child-communication a {
     color: red !important;
     cursor: pointer;
 }
-.text-container .tab-link {
+.child-communication .tab-link {
     color: red !important;
     cursor: pointer;
 }
 
-.text-container span:before {
+.child-communication span:before {
     content: '.';
     font-size: 0;
     display: block;
