@@ -1,0 +1,23 @@
+.movie-recommendations {
+    padding-right: 40px;
+    font-size: 17px;
+}
+
+.movie-recommendations .text-title{
+    font: 35px 'Sigmar One', sans-serif !important;
+    color: #DE4E8D;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.movie-recommendations span::after {
+    content: '.';
+    font-size: 0;
+    display: block;
+    line-height: 20px;
+}
+
+.div-center{
+    text-align: center;
+}
+

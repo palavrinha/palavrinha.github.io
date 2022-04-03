@@ -23,7 +23,7 @@ export default function Home() {
     )
 
     return (
-        <section>
+        <section className="home-area">
             <div className="carousel-area">
                 <Carousel
                     activeIndex={carouselIndex}

@@ -1,36 +1,36 @@
-.carousel-item-area {
+.home-area .carousel-item-area {
     display: flex;
     height: 88vh;
 }
 
-.carousel-indicators button:not(.active) {
+.home-area .carousel-indicators button:not(.active) {
     background-color: white;
     border-radius: 50%;
     height: 25px;
     width: 25px;
 }
 
-.carousel-indicators button.active {
+.home-area .carousel-indicators button.active {
     background-color: #F23229;
     border-radius: 50%;
     height: 25px;
     width: 25px;
 }
 
-.carousel-item-area .carousel-description {
+.home-area .carousel-item-area .carousel-description {
     display: flex;
     flex-direction: column;
     background-color: #0588CB;
     width: auto;
 }
 
-.carousel-item-area .carousel-description section {
+.home-area .carousel-item-area .carousel-description section {
     text-align: start;
     width: 65%;
     margin: auto;
 }
 
-.carousel-item-area .carousel-description button {
+.home-area .carousel-item-area .carousel-description button {
     font: 27px 'Sigmar One', sans-serif !important;
     background-color: #F28F05;
     color: white;
@@ -41,19 +41,19 @@
 }
 
 
-.carousel-item-area .carousel-description-2 {
+.home-area .carousel-item-area .carousel-description-2 {
     display: flex;
     flex-direction: column;
     background-color: #F28F05;
 }
 
-.carousel-item-area .carousel-description-2 section {
+.home-area .carousel-item-area .carousel-description-2 section {
     text-align: end;
     width: 65%;
     margin: auto;
 }
 
-.carousel-item-area .carousel-description-2 section span {
+.home-area .carousel-item-area .carousel-description-2 section span {
     font-weight: bold;
     font: 3rem 'Sigmar One', sans-serif !important;
     color: #F23229;
@@ -61,7 +61,7 @@
 }
 
 
-.carousel-item-area .carousel-description-2 button {
+.home-area .carousel-item-area .carousel-description-2 button {
     font: 27px 'Sigmar One', sans-serif !important;
     background-color: #038C3E;
     border: 0;
@@ -74,30 +74,30 @@
 
 
 
-.carousel-item-area .carousel-description-3 {
+.home-area .carousel-item-area .carousel-description-3 {
     display: flex;
     flex-direction: column;
     background-color: #038C3E;
     width: auto;
 }
 
-.carousel-item-area .carousel-description-3 section {
+.home-area .carousel-item-area .carousel-description-3 section {
     text-align: start;
     width: 65%;
     margin: auto;
 }
 
-.carousel-item-area .carousel-description-3 section h5 {
+.home-area .carousel-item-area .carousel-description-3 section h5 {
     font-weight: bold;
     font: 3rem 'Sigmar One', sans-serif !important;
     color: #F28F05;
 }
 
-.carousel-item-area .carousel-description-3 section .middle-text {
+.home-area .carousel-item-area .carousel-description-3 section .middle-text {
     text-align: start;
 }
 
-.carousel-item-area .carousel-description-3 button {
+.home-area .carousel-item-area .carousel-description-3 button {
     font: 27px 'Sigmar One', sans-serif !important;
     background-color: #DE4E8D;
     border: 0;

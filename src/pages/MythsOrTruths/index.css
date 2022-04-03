@@ -30,3 +30,8 @@
     font-weight: bolder;
     text-align: center;
 }
+.references {
+    padding: 20px;
+    text-align: left;
+    width: 800px;
+}
