@@ -29,7 +29,7 @@ export default function AlertSigns(props) {
                     qualificado(a) que um diagnóstico pode ser dado de maneira ética e responsável!
                 </p>
                 <p style={{ color: '#DE4E8D', fontWeight: 'bold' }}>
-                    Alguns sinais de alerta são:
+                    Alguns sinais de alerta são<sup>1-3</sup>:
                 </p>
                 <ul className="alert-signs-list">
                     <li>A criança não responde a sons, ruídos e vozes do ambiente ou apresenta incômodo incomum com sons altos;</li>

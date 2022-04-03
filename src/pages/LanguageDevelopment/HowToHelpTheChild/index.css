@@ -64,17 +64,3 @@
 .list-tips li {
     font-size: 14px;
 }
-
-.references {
-    padding-right: 40px;
-    padding-bottom: 20px;
-}
-.references span {
-    font: italic 400 17px 'Montserrat', sans-serif  !important;
-}
-.references span::before {
-    content: '.';
-    font-size: 0;
-    display: block;
-    line-height: 20px;
-}

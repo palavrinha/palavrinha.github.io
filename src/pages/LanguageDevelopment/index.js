@@ -1,6 +1,5 @@
 import { Tab, Row, Col, Nav } from 'react-bootstrap';
 import React from 'react';
-import './index.css';
 import { useState } from 'react';
 import ChildCommunication from './ChildCommunication';
 import HowToHelpTheChild from './HowToHelpTheChild';

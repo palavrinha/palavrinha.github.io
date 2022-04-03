@@ -1,0 +1,20 @@
+.about-child-activities {
+    padding-right: 40px;
+    font-size: 17px;
+    padding-bottom: 30px;
+}
+
+.about-child-activities .text-title {
+    font-size: 30px;
+    padding-top: 15px;
+    font-family: 'Sigmar One';
+    color: #DE4E8D;
+    text-align: center;
+}
+
+.about-child-activities span::before {
+    content: '.';
+    font-size: 0;
+    display: block;
+    line-height: 20px;
+}

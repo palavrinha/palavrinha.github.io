@@ -20,12 +20,12 @@ export default function Header() {
                         Desenvolvimento da linguagem
                     </Nav.Link>
                     <Nav.Link
-                        onClick={() => history.push('/nao-implementada')}
+                        onClick={() => history.push('/child-activities')}
                         bsPrefix="header-item">
                         Brincadeiras
                     </Nav.Link>
                     <Nav.Link
-                        onClick={() => history.push('/nao-implementada')}
+                        onClick={() => history.push('/myths-or-truths')}
                         bsPrefix="header-item">
                         Mitos e Verdades
                     </Nav.Link>

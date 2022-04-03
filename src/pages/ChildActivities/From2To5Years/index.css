@@ -1,0 +1,24 @@
+.from-2-to-5-years {
+    padding-right: 40px;
+    font-size: 17px;
+    padding-bottom: 30px;
+}
+
+.from-2-to-5-years .text-title {
+    font-size: 30px;
+    padding-top: 15px;
+    font-family: 'Sigmar One';
+    color: #DE4E8D;
+    text-align: center;
+}
+
+.from-2-to-5-years img {
+    text-align: center;
+}
+
+.child-activitie span::before {
+    content: '.';
+    font-size: 0;
+    display: block;
+    line-height: 20px;
+}

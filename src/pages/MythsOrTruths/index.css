@@ -1,0 +1,32 @@
+.myth-or-truth-question {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 17px;
+}
+.myth-or-truth-question h3{
+    color: #DE4E8D;
+    font: 'Montserrat';
+    font-weight: bold;
+    width: 800px;
+}
+
+.myth-or-truth-question .button {
+    border: 1px solid #DE4E8D;
+    font-weight: 400px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    width: 800px;
+    height: 40px;
+}
+.myth-or-truth .text-title{
+    padding-top: 20px;
+    font: 35px 'Sigmar One', sans-serif !important;
+    color: #DE4E8D;
+    font-weight: bolder;
+    text-align: center;
+}

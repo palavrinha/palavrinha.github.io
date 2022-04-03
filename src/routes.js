@@ -6,6 +6,8 @@ import LanguageDevelopment from './pages/LanguageDevelopment';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 import Header from './components/Header'
+import ChildActivities from './pages/ChildActivities';
+import MythsOrTruths from './pages/MythsOrTruths';
 
 export default function Routes() {
     return (
@@ -13,9 +15,11 @@ export default function Routes() {
             <Header />
             <div style={{ marginTop: '12vh' }}>
                 <Switch>
-                    <Route exact path={'/language-development'} component={LanguageDevelopment} />
                     <Route exact path={'/'} component={Home} />
                     <Route exact path={'/home'} component={Home} />
+                    <Route exact path={'/language-development'} component={LanguageDevelopment} />
+                    <Route exact path={'/child-activities'} component={ChildActivities} />
+                    <Route exact path={'/myths-or-truths'} component={MythsOrTruths} />
                     <Route exact path={'/about-us'} component={AboutUs} />
                     <Route exact path={'/contact'} component={Contact} />
                     <Route component={NotFound} />

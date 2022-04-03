@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Carousel, Button } from 'react-bootstrap';
 import { useHistory } from 'react-router';
-import sisters_reading from '../../assets/home-images/sisters-reading.png';
-import sisters_drawing from '../../assets/home-images/sisters-drawing.png';
-import father_and_daughter from '../../assets/home-images/father-and-daughter.png';
+import sisters_reading from '../../assets/home/sisters-reading.png';
+import sisters_drawing from '../../assets/home/sisters-drawing.png';
+import father_and_daughter from '../../assets/home/father-and-daughter.png';
 import break_line_logo from '../../assets/break-line-logo.png';
 import './index.css';
 
