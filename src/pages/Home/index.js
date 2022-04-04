@@ -23,7 +23,7 @@ export default function Home() {
     )
 
     return (
-        <section className="home-area">
+        <section>
             <div className="carousel-area">
                 <Carousel
                     activeIndex={carouselIndex}
@@ -88,7 +88,7 @@ export default function Home() {
                                 <section>
                                     <h5>Como ajudar a criança?</h5>
                                     <span className="middle-text">
-                                        Uma grande preocupação de quem convive com crianças é: <b>quando elas começarão a falar?</b>
+                                        Dicas para auxiliar no desenvolvimento da <b>comunicação e linguagem</b> da criança.
                                     </span>
                                     <Button onClick={() => { history.push('/about-us') }}>
                                         Veja as dicas
