@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a5af0f82.css",
-    "main.js": "/static/js/main.7cb253cc.js",
+    "main.css": "/static/css/main.88631304.css",
+    "main.js": "/static/js/main.861160e8.js",
     "static/media/sisters-reading.png": "/static/media/sisters-reading.cac4398a15532182bf5c.png",
     "static/media/sisters-drawing.png": "/static/media/sisters-drawing.9961b16ebe2a5b0f8e18.png",
     "static/media/brincando_com_baloes.jpg": "/static/media/brincando_com_baloes.aaac57320fbad4132eaf.jpg",
@@ -41,11 +41,11 @@
     "static/media/Molde de dado.pdf": "/static/media/Molde de dado.4fc92c6ae804638d2576.pdf",
     "static/media/caca_ao_tesouro.jpg": "/static/media/caca_ao_tesouro.d8daf2c1f6342bdb579b.jpg",
     "index.html": "/index.html",
-    "main.a5af0f82.css.map": "/static/css/main.a5af0f82.css.map",
-    "main.7cb253cc.js.map": "/static/js/main.7cb253cc.js.map"
+    "main.88631304.css.map": "/static/css/main.88631304.css.map",
+    "main.861160e8.js.map": "/static/js/main.861160e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5af0f82.css",
-    "static/js/main.7cb253cc.js"
+    "static/css/main.88631304.css",
+    "static/js/main.861160e8.js"
   ]
 }
