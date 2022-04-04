@@ -2,8 +2,17 @@ import React from 'react';
 import './index.css';
 import { Accordion, Image } from 'react-bootstrap';
 
-const images = {
-    contacao_de_historias: require('../../../assets/child-activities/0-2/contacao-de-historias.png')
+const content = {
+    'brincando_no_espelho' :   require('../../../assets/child-activities/0-2/brincando_no_espelho.jpg'),
+    'chocalho_divertido' :     require('../../../assets/child-activities/0-2/chocalho_divertido.jpg'),
+    'contacao_de_historias':   require('../../../assets/child-activities/0-2/contacao_de_historias.jpg'),
+    'combinando_as_formas':    require('../../../assets/child-activities/0-2/combinando_as_formas.jpg'),
+    'brincadeiras_sensoriais': require('../../../assets/child-activities/0-2/brincadeiras_sensoriais.jpg'),
+    'caca_ao_tesouro':         require('../../../assets/child-activities/0-2/caca_ao_tesouro.jpg'),
+    'cade_o_brinquedo':        require('../../../assets/child-activities/0-2/cade_o_brinquedo.jpg'),
+    'quebra_cabeca':           require('../../../assets/child-activities/0-2/quebra_cabeca.jpg'),
+    'mestre_mandou':           require('../../../assets/child-activities/0-2/mestre_mandou.jpg'),
+    'caixa_de_correio':        require('../../../assets/child-activities/0-2/caixa_de_correio.jpg'),
 }
 export default function From0To2Years() {
     return (
@@ -14,7 +23,7 @@ export default function From0To2Years() {
                     <Accordion.Header>1. Brincando no espelho</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['brincando_no_espelho']} />
                         </p>
                         <span>
                             Espelhos são ótimos instrumentos para brincar com os nossos pequenos (a partir de 3 a 4 meses)! Você pode brincar com seu bebê na frente deles, nomeando partes do corpo, cantando músicas.. enfim, usar e abusar da criatividade! Os bebês costumam ficar muito entretidos em atividades desse tipo, você pode usar objetos também para tornar a atividade mais divertida e até mesmo colocar imagens no espelho e aproveitar para desenvolver mais habilidades!
@@ -31,7 +40,7 @@ export default function From0To2Years() {
                     <Accordion.Header>2. Chocalho divertido</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['chocalho_divertido']} />
                         </p>
                         <span>
                             O chocalho é um clássico da infância e pode ser realizado facilmente com utensílios que temos em casa!
@@ -60,7 +69,7 @@ export default function From0To2Years() {
                     <Accordion.Header>3. Contação de histórias</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['contacao_de_historias']} />
                         </p>
                         <span>
                             Às vezes pensamos que as histórias devem ser contadas apenas
@@ -83,7 +92,7 @@ export default function From0To2Years() {
                     <Accordion.Header>4. Combinando as formas</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['combinando_as_formas']} />
                         </p>
                         <span>
                             Essa é uma brincadeira super simples de ser feita! Precisaremos
@@ -111,7 +120,7 @@ export default function From0To2Years() {
                     <Accordion.Header>5. Brincadeiras sensoriais</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['brincadeiras_sensoriais']} />
                         </p>
                         <span>
                             As brincadeiras sensoriais tem como objetivo fazer com que a
@@ -135,7 +144,7 @@ export default function From0To2Years() {
                     <Accordion.Header>6. Caça ao tesouro</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['caca_ao_tesouro']} />
                         </p>
                         <span>
                             Quase todo mundo já brincou de caça ao tesouro, recomendamos essa brincadeira para
@@ -162,7 +171,7 @@ export default function From0To2Years() {
                     <Accordion.Header>7. Cadê o brinquedo?</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['cade_o_brinquedo']} />
                         </p>
                         <span>
                             Essa é uma brincadeira muito simples, dentro de uma caixa, ou em
@@ -186,7 +195,7 @@ export default function From0To2Years() {
                     <Accordion.Header>8. Quebra-cabeça</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['quebra_cabeca']} />
                         </p>
                         <span>
                             Existem vários tipos de quebra cabeça, desde os mais simples até
@@ -211,7 +220,7 @@ export default function From0To2Years() {
                     <Accordion.Header>9. Mestre mandou</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['mestre_mandou']} />
                         </p>
                         <span>
                             O mestre mandou! Também muito conhecida, a brincadeira consiste
@@ -234,7 +243,7 @@ export default function From0To2Years() {
                     <Accordion.Header>10. Caixa de correio</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['caixa_de_correio']} />
                         </p>
                         <span>
                             Que tal fazermos nosso próprio correio em casa? Essa atividade

@@ -17,10 +17,6 @@ p{
     text-indent: 30px;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 .flex-box {
     display: flex;
     justify-content: center;
@@ -43,10 +39,12 @@ sup {
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: 20%;
+    width: 300px;
     border-right: 1px black solid;
-    margin: 20px;
     height: 65vh;
+}
+.left-tab-menu .nav{
+    margin: 0;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -57,11 +55,12 @@ sup {
 }
 
 .left-tab-menu h1 {
-    padding: 20px;
-    font: 18px 'Sigmar One', sans-serif !important;
+    font: 20px 'Sigmar One', sans-serif !important;
+    text-align: left;
+    width: 240px;
+    margin-bottom: 10px;
     color: #DE4E8D;
     font-weight: bolder;
-    text-align: left;
 }
 
 .left-tab-menu .tab-button {
@@ -89,6 +88,8 @@ sup {
 .references {
     padding-right: 40px;
     padding-bottom: 20px;
+    width: 100%;
+    margin: auto;
 }
 .references span {
     font: italic 400 17px 'Montserrat', sans-serif  !important;

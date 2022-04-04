@@ -9,14 +9,19 @@
 }
 .about-us-text{
     background-color: #F23229;
+    margin: 0 auto;
+    padding-bottom: 50px;
 }
 .middle-text{
-    font-weight: 100;
     font: 26px 'Montserrat', sans-serif !important;
     color: white;
+    background-color: #F23229;
+    width: 80%;
+    margin: 0 auto;
 }
 .about-us-integrants{
     background-color: #0588CB;
+    padding-bottom: 50px;
 }
 .about-us-integrants .title{
     font-family: 'Sigmar One';
@@ -41,7 +46,10 @@
     margin-right: 5px;
 }
 .integrant-card {
-    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px;
 }
 .column-space{
     display: flex;

@@ -7,12 +7,12 @@ export default function MovieRecommendations() {
 
     const prevIcon = (
         <svg width="27" height="35" viewBox="0 0 27 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M25 2L4 26.5L25 51" stroke="#038C3E" stroke-width="5" />
+            <path d="M25 2L4 26.5L25 51" stroke="#038C3E" strokeWidth="5" />
         </svg>
     )
     const nextIcon = (
         <svg width="27" height="35" viewBox="0 0 27 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2 51L23 26.5L2 2" stroke="#038C3E" stroke-width="5" />
+            <path d="M2 51L23 26.5L2 2" stroke="#038C3E" strokeWidth="5" />
         </svg>
     )
 

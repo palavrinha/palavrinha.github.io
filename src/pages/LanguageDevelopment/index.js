@@ -11,11 +11,10 @@ export default function LanguageDevelopment() {
 
     return (
         <Tab.Container 
-            id="left-tabs-example" 
             activeKey={tabKey}
             onSelect={(k) => setTabKey(k)}>
-            <Row>
-                <Col sm={3}>
+            <Row style={{margin: 0 }}>
+                <Col sm={3} style={{margin: 0 }}>
                     <Nav className="left-tab-menu">
                         <h1>Desenvolvimento da Linguagem</h1>
                         <Nav.Item>
@@ -32,7 +31,7 @@ export default function LanguageDevelopment() {
                         </Nav.Item>
                     </Nav>
                 </Col>
-                <Col sm={9}>
+                <Col sm={9} style={{margin: 0 }}>
                     <Tab.Content>
                         <Tab.Pane eventKey="child-communication">
                             <ChildCommunication onTabChange={setTabKey}/>

@@ -2,8 +2,17 @@ import React from 'react';
 import './index.css';
 import { Accordion, Image } from 'react-bootstrap';
 
-const images = {
-    contacao_de_historias: require('../../../assets/child-activities/0-2/contacao-de-historias.png')
+const content = {
+    'caixa_misteriosa':                require('../../../assets/child-activities/2-5/caixa_misteriosa.jpg'),
+    'arvore_genealogica':              require('../../../assets/child-activities/2-5/arvore_genealogica.jpg'),
+    'teatro_de_dedoches_ou_fantoches': require('../../../assets/child-activities/2-5/teatro_de_dedoches_ou_fantoches.jpg'),
+    'bolhas_de_sabao':                 require('../../../assets/child-activities/2-5/bolhas_de_sabao.jpg'),
+    'massinha_caseira':                require('../../../assets/child-activities/2-5/massinha_caseira.jpg'),
+    'boliche_com_garrafa_pet':         require('../../../assets/child-activities/2-5/boliche_com_garrafa_pet.jpg'),
+    'contacao_de_historias':           require('../../../assets/child-activities/2-5/contacao_de_historias.jpg'),
+    'adedanha':                        require('../../../assets/child-activities/2-5/adedanha.jpg'),
+    'dado_com_rimas':                  require('../../../assets/child-activities/2-5/dado_com_rimas.jpg'),
+    'dado_das_caretas':                require('../../../assets/child-activities/2-5/dado_das_caretas.jpg'),
 }
 export default function From2To5Years() {
     return (
@@ -14,7 +23,7 @@ export default function From2To5Years() {
                     <Accordion.Header>1. Caixa misteriosa</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['caixa_misteriosa']} />
                         </p>
                         <span>
                             Esse é um ótimo recurso e pode ser usado também de várias formas! Que tal brincar com a curiosidade do seu filho?! É justamente o
@@ -47,7 +56,7 @@ export default function From2To5Years() {
                     <Accordion.Header>2. Árvore genealógica</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['arvore_genealogica']} />
                         </p>
                         <span>
                             Selecione fotos dos familiares próximos que a criança tenha ou não  contato, por exemplo os pais, avós, tios e primos.
@@ -69,7 +78,7 @@ export default function From2To5Years() {
                     <Accordion.Header>3. Teatro de dedoches ou fantoches</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['teatro_de_dedoches_ou_fantoches']} />
                         </p>
                         <span>
                             Próximo aos dois anos, a criança começa a desenvolver brincadeiras mais elaboradas, como aquelas que imitam as
@@ -88,7 +97,7 @@ export default function From2To5Years() {
                     <Accordion.Header>4. Bolhas de sabão</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['bolhas_de_sabao']} />
                         </p>
                         <span>
                             As bolhas de sabão são fascinantes para as crianças e até mesmo para nós adultos, não é mesmo? Elas são muito
@@ -107,7 +116,7 @@ export default function From2To5Years() {
                     <Accordion.Header>5. Massinha caseira</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['massinha_caseira']} />
                         </p>
                         <span>
                             A massinha é super divertida e dá para ser usada de vários jeitos e por muitas idades, como forma de
@@ -137,7 +146,7 @@ export default function From2To5Years() {
                     <Accordion.Header>6. Boliche com garrafa pet</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['boliche_com_garrafa_pet']} />
                         </p>
                         <span>
                             Boliche é sempre uma atividade divertida, as crianças também adoram! Podemos aliar ao boliche desafios
@@ -163,7 +172,7 @@ export default function From2To5Years() {
                     <Accordion.Header>7. Contação de histórias</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['contacao_de_historias']} />
                         </p>
                         <span>
                             Contar histórias para uma criança é ótimo para o seu desenvolvimento da linguagem. O contato com os
@@ -189,7 +198,7 @@ export default function From2To5Years() {
                     <Accordion.Header>8. Adedanha</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['adedanha']} />
                         </p>
                         <span>
                             A adedanha que sugerimos não necessita de papel e caneta! Os jogadores vão sortear uma letra. É de costume que a
@@ -217,7 +226,7 @@ export default function From2To5Years() {
                     <Accordion.Header>9. Dado com rimas</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['dado_com_rimas']} />
                         </p>
                         <span>
                             Para realizar essa brincadeira estamos disponibilizando um arquivo com um molde de um dado para impressão.
@@ -240,7 +249,7 @@ export default function From2To5Years() {
                     <Accordion.Header>10. Dado com caretas</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['dado_das_caretas']} />
                         </p>
                         <span>
                             Assim como na atividade anterior, oferecemos para essa brincadeira um arquivo para impressão.

@@ -14,38 +14,28 @@ export default function ChildActivities() {
         <Tab.Container
             activeKey={tabKey}
             onSelect={(k) => setTabKey(k)}>
-            <Row>
+            <Row style={{margin: 0 }}>
                 <Col sm={3}>
                     <Nav className="left-tab-menu">
                         <h1>Brincadeiras por idade</h1>
                         <Nav.Item>
-                            <Nav.Link eventKey="about-child-activities" className="tab-button">
-                                Sobre o brincar
-                            </Nav.Link>
+                            <Nav.Link eventKey="about-child-activities" className="tab-button">Sobre o brincar</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="age-0-2" className="tab-button">
-                                0 a 2 anos
-                            </Nav.Link>
+                            <Nav.Link eventKey="age-0-2" className="tab-button">0 a 2 anos </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="age-2-5" className="tab-button">
-                                2 a 5 anos
-                            </Nav.Link>
+                            <Nav.Link eventKey="age-2-5" className="tab-button">2 a 5 anos</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="age-6-9" className="tab-button">
-                                6 a 9 anos
-                            </Nav.Link>
+                            <Nav.Link eventKey="age-6-9" className="tab-button">6 a 9 anos</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="movie-recommendations" className="tab-button">
-                                Indicações de filmes
-                            </Nav.Link>
+                            <Nav.Link eventKey="movie-recommendations" className="tab-button">Indicações de filmes</Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Col>
-                <Col sm={9}>
+                <Col sm={9} style={{margin:0 }}>
                     <Tab.Content>
                         <Tab.Pane eventKey="about-child-activities">
                             <AboutChildActivities/>

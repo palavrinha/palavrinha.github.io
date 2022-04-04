@@ -1,10 +1,18 @@
 import React from 'react';
 import './index.css';
 import { Accordion, Button, Image } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
-const images = {
-    contacao_de_historias: require('../../../assets/child-activities/0-2/contacao-de-historias.png')
+import { FaDownload } from 'react-icons/fa';
+
+const content = {
+    livro_das_emocoes:      require('../../../assets/child-activities/6-9/livro_das_emocoes.jpg'),
+    boliche_das_silabas:    require('../../../assets/child-activities/6-9/boliche_das_silabas.jpg'),
+    'origami_come_come':    'S-H6ut8QzJE',
+    brincando_com_baloes:   require('../../../assets/child-activities/6-9/brincando_com_baloes.jpg'),
+    dado_da_improvisacao:   require('../../../assets/child-activities/6-9/dado_da_improvisacao.jpg'),
+    telefone_sem_fio:       require('../../../assets/child-activities/6-9/telefone_sem_fio.jpg'),
+    descobrindo_as_silabas: require('../../../assets/child-activities/6-9/descobrindo_as_silabas.jpg'),
+    mudando_a_historia:     require('../../../assets/child-activities/6-9/mudando_a_historia.jpg'),
+    molde_de_dado:          require('../../../assets/child-activities/6-9/Molde de dado.pdf'),
 }
 
 export default function From2To5Years() {
@@ -16,7 +24,7 @@ export default function From2To5Years() {
                     <Accordion.Header>1. Livro das emoções</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['livro_das_emocoes']} />
                         </p>
                         <span>
                             Essa é uma brincadeira que pode ter resultados encantadores, por meio dessa brincadeira é possível trabalhar a percepção e comunicação de seus
@@ -37,7 +45,7 @@ export default function From2To5Years() {
                     <Accordion.Header>2. Boliche das sílabas</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['boliche_das_silabas']} />
                         </p>
                         <span>
                             Já sugerimos a brincadeira de boliche para as crianças mais novas. Boliche é sempre divertido, não é mesmo? A nossa sugestão para essa faixa etária
@@ -67,7 +75,17 @@ export default function From2To5Years() {
                     <Accordion.Header>3. Origami Come-come</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+
+                            <iframe
+                                width="800px"
+                                height="370"
+                                title={'origami_come_come'}
+                                src={
+                                    "https://youtube.com/embed/" +
+                                    content['origami_come_come'] +
+                                    "?mute=1"
+                                }>
+                            </iframe>
                         </p>
                         <span>
                             Habilidades trabalhadas: tarefas de consciência fonológica: síntese, segmentação, identificação, produção, exclusão e transposição.
@@ -106,7 +124,7 @@ export default function From2To5Years() {
                     <Accordion.Header>4. Brincando com balões</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['brincando_com_baloes']} />
                         </p>
                         <span>
                             Para realizar essa brincadeira precisamos de balões de festa.  As bolas deverão ser enchidas e coladas com fita adesiva na parede ou no chão.
@@ -134,7 +152,7 @@ export default function From2To5Years() {
                     <Accordion.Header>5. Dado da improvisação</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['dado_da_improvisacao']} />
                         </p>
                         <span>
                             Essa brincadeira consiste em um desafio de improvisação. Para que ela seja realizada é preciso que seja usado o molde disponibilizado abaixo.
@@ -152,8 +170,8 @@ export default function From2To5Years() {
                         <br />
                         <br />
                         <br />
-                        <Button style={{ fontWeight: 'bold', backgroundColor: '#DE4E8D', border: 0 }}>
-                            <FontAwesomeIcon icon={faDownload} color="white" /> Baixar molde de dado
+                        <Button style={{ fontWeight: 'bold', backgroundColor: '#DE4E8D', border: 0 }} href={content['molde_de_dado']} target="_blank" rel="noreferrer">
+                            <FaDownload color="white" /> Baixar molde de dado
                         </Button>
                     </Accordion.Body>
                 </Accordion.Item>
@@ -161,7 +179,7 @@ export default function From2To5Years() {
                     <Accordion.Header>6. Telefone sem fio</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['telefone_sem_fio']} />
                         </p>
                         <span>
                             Essa é uma versão da brincadeira tradicional do telefone sem fio, ideal para ser realizada com grupos de crianças. Nesta brincadeira elas deverão
@@ -183,7 +201,7 @@ export default function From2To5Years() {
                     <Accordion.Header>7. Descobrindo as sílabas</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['descobrindo_as_silabas']} />
                         </p>
                         <span>
                             Essa brincadeira é muito simples e criativa! Para fazê-la basta um recipiente com água e papel toalha. Divida o papel em faixas e dobre-o ao meio.
@@ -204,7 +222,7 @@ export default function From2To5Years() {
                     <Accordion.Header>8. Mudando a história</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <p className="text-center">
-                            <Image src={images.contacao_de_historias} />
+                            <Image src={content['mudando_a_historia']} />
                         </p>
                         <span>
                             Que tal mudar uma história que você já conhece? Isso mesmo, essa é uma forma de estimular a narrativa e a criatividade dos seus pequenos.
@@ -216,9 +234,15 @@ export default function From2To5Years() {
                             Assim, a partir da escolha de uma história de sua preferência, e do sorteio da face do dado a criança poderá brincar e ser desafiada a
                             reinventar uma história.
                         </span>
+                        <br />
+                        <br />
+                        <br />
+                        <Button style={{ fontWeight: 'bold', backgroundColor: '#DE4E8D', border: 0 }} href={content['molde_de_dado']} target="_blank" rel="noreferrer">
+                            <FaDownload color="white" /> Baixar molde de dado
+                        </Button>
                     </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item eventKey="8" style={{marginTop: '80px', marginBottom: '80px'}}>
+                <Accordion.Item eventKey="8" style={{ marginTop: '80px', marginBottom: '80px' }}>
                     <Accordion.Header>Dica</Accordion.Header>
                     <Accordion.Body className="child-activitie">
                         <span>

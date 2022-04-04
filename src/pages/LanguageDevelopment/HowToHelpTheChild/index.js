@@ -18,12 +18,12 @@ export default function HowToHelpTheChild() {
 
     const prevIcon = (
         <svg width="24" height="33" viewBox="0 0 48 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M44 5L10 32.5L44 60" stroke="#F28F05" stroke-width="12" />
+            <path d="M44 5L10 32.5L44 60" stroke="#F28F05" strokeWidth="12" />
         </svg>
     )
     const nextIcon = (
         <svg width="24" height="33" viewBox="0 0 48 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 60L38 32.5L4 5" stroke="#F28F05" stroke-width="12" />
+            <path d="M4 60L38 32.5L4 5" stroke="#F28F05" strokeWidth="12" />
         </svg>
     )
 
@@ -108,8 +108,8 @@ export default function HowToHelpTheChild() {
                         }}
                         disabled={currentTipIndex === 0}
                     />
-                    {tips.map(tip => {
-                        return <Pagination.Item className="desktop-only" key={tip} onClick={(e) => { changePage(Number(e.target.text)) }}> {tips.indexOf(tip)} </Pagination.Item>
+                    {tips.map((tip,idx) => {
+                        return <Pagination.Item className="desktop-only" key={idx} onClick={(e) => { changePage(Number(e.target.text)) }}> {tips.indexOf(tip)} </Pagination.Item>
                     })}
                     <Pagination.Next
                         onClick={() => {

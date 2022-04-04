@@ -13,12 +13,12 @@ export default function Home() {
 
     const prevIcon = (
         <svg width="48" height="65" viewBox="0 0 48 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M44 5L10 32.5L44 60" stroke="#DE4E8D" stroke-width="12" />
+            <path d="M44 5L10 32.5L44 60" stroke="#DE4E8D" strokeWidth="12" />
         </svg>
     )
     const nextIcon = (
         <svg width="48" height="65" viewBox="0 0 48 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 60L38 32.5L4 5" stroke="#DE4E8D" stroke-width="12" />
+            <path d="M4 60L38 32.5L4 5" stroke="#DE4E8D" strokeWidth="12" />
         </svg>
     )
 

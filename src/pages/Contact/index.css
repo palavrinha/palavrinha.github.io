@@ -1,6 +1,6 @@
 .contact{
     background-color: #DE4E8D !important;
-    height: 100vh;
+    height: 88vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -14,6 +14,9 @@
     text-align: center;
 }
 .contact .subtitle h4{
+    width: 800px;
+    margin: auto;
+    margin-bottom: 40px;
     font-family: 'Montserrat';
     color: white;
     font-size: 20px;

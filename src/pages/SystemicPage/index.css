@@ -1,0 +1,20 @@
+.systemic-page {
+    margin: auto;
+    width: 800px;
+    font-size: 18px;
+}
+
+.systemic-page .text-title{
+    padding-top: 20px;
+    font: 35px 'Sigmar One', sans-serif !important;
+    color: #038C3E;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.systemic-page span:before {
+    content: '.';
+    font-size: 0;
+    display: block;
+    line-height: 20px;
+}

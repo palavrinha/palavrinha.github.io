@@ -81,7 +81,7 @@ export default class CustomPopover extends React.Component {
 }
 
 CustomPopover.defaultProps = {
-    delay: 0
+    delay: 100
 };
 
 CustomPopover.propTypes = {

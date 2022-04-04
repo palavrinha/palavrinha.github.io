@@ -30,17 +30,17 @@ export default function Header() {
                         Mitos e Verdades
                     </Nav.Link>
                     <Nav.Link
-                        onClick={() => history.push('/nao-implementada')}
+                        onClick={() => history.push('/systemic-page')}
                         bsPrefix="header-item">
                         Cantinho sistêmico
                     </Nav.Link>
                     <Nav.Link
-                        onClick={() => history.push('/nao-implementada')}
+                        onClick={() => history.push('/about-us')}
                         bsPrefix="header-item">
                         Quem somos
                     </Nav.Link>
                     <Nav.Link
-                        onClick={() => history.push('/nao-implementada')}
+                        onClick={() => history.push('/contact')}
                         bsPrefix="header-item">
                         Contate-nos
                     </Nav.Link>
