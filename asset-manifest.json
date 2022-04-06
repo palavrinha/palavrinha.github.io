@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.88631304.css",
-    "main.js": "/static/js/main.861160e8.js",
+    "main.css": "/static/css/main.3331b5df.css",
+    "main.js": "/static/js/main.c9141997.js",
     "static/media/sisters-reading.png": "/static/media/sisters-reading.cac4398a15532182bf5c.png",
     "static/media/sisters-drawing.png": "/static/media/sisters-drawing.9961b16ebe2a5b0f8e18.png",
     "static/media/brincando_com_baloes.jpg": "/static/media/brincando_com_baloes.aaac57320fbad4132eaf.jpg",
@@ -18,9 +18,9 @@
     "static/media/contacao_de_historias.jpg": "/static/media/contacao_de_historias.44977ace8d86d661f223.jpg",
     "static/media/tatiana-bagetti.png": "/static/media/tatiana-bagetti.48cf3ad8b5a0aab5739c.png",
     "static/media/adedanha.jpg": "/static/media/adedanha.50011eeac116a06d4ddf.jpg",
-    "static/media/palavrinha-desktop-img.png": "/static/media/palavrinha-desktop-img.e68fd882e8f1de3f328c.png",
     "static/media/boliche_com_garrafa_pet.jpg": "/static/media/boliche_com_garrafa_pet.308d91ab289fce1ff218.jpg",
     "static/media/gabrielle-vicente-ferreira.png": "/static/media/gabrielle-vicente-ferreira.804aba99db273b4097e2.png",
+    "static/media/desktop-palavrinha.png": "/static/media/desktop-palavrinha.91f55e2251d1b2c087c1.png",
     "static/media/livro_das_emocoes.jpg": "/static/media/livro_das_emocoes.343a31883bb5804aec86.jpg",
     "static/media/teatro_de_dedoches_ou_fantoches.jpg": "/static/media/teatro_de_dedoches_ou_fantoches.a009df01ef99f0d63620.jpg",
     "static/media/brincando_no_espelho.jpg": "/static/media/brincando_no_espelho.f18439512b8d5d392644.jpg",
@@ -41,11 +41,11 @@
     "static/media/Molde de dado.pdf": "/static/media/Molde de dado.4fc92c6ae804638d2576.pdf",
     "static/media/caca_ao_tesouro.jpg": "/static/media/caca_ao_tesouro.d8daf2c1f6342bdb579b.jpg",
     "index.html": "/index.html",
-    "main.88631304.css.map": "/static/css/main.88631304.css.map",
-    "main.861160e8.js.map": "/static/js/main.861160e8.js.map"
+    "main.3331b5df.css.map": "/static/css/main.3331b5df.css.map",
+    "main.c9141997.js.map": "/static/js/main.c9141997.js.map"
   },
   "entrypoints": [
-    "static/css/main.88631304.css",
-    "static/js/main.861160e8.js"
+    "static/css/main.3331b5df.css",
+    "static/js/main.c9141997.js"
   ]
 }
