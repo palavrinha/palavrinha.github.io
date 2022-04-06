@@ -2,7 +2,9 @@ import React from 'react';
 import { Image } from 'react-bootstrap';
 import './index.css';
 import { FaGithub, FaLinkedin, FaInfoCircle, FaBriefcase, FaInstagram, FaFileAlt } from 'react-icons/fa';
-import palavrinhaDesktop from '../../assets/about-us/palavrinha-desktop-img.png';
+import palavrinhaDesktop from '../../assets/about-us/desktop-palavrinha.png';
+import palavrinhaBrokeLineLogo from '../../assets/break-line-logo.png'
+// import palavrinhaArrow from '../../assets/about-us/arrow.png';
 
 import LAE from '../../assets/integrants/lucas-araujo-emmerich.jpg';
 import PVA from '../../assets/integrants/patricia-do-valle-alves.png';
@@ -52,7 +54,7 @@ const integrants = [
         responsability: 'Como bolsista PIBIT durante um ano, idealizou o site junto da professora e orientadora Tatiana Bagetti. Elaborou todo o conteúdo do Palavrinha referente à teoria e prática fonoaudiológica.',
         info: [
             {
-                label: 'Instagram Profissional',
+                label: 'Instagram',
                 icon: <FaInstagram color="#0E76A8" style={{ cursor: 'pointer' }} size={16} />,
                 url: 'https://www.instagram.com/fonoa.patricia/'
             },
@@ -73,6 +75,11 @@ const integrants = [
                 label: 'Currículo lattes',
                 icon: <FaFileAlt color="white" style={{ cursor: 'pointer' }} size={16} />,
                 url: 'http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4708670J6&tokenCaptchar=03AGdBq24FKsFeRTDHfdU7vMi8u65xhoc2bFLjGk1qfhSysUJCXlDcWUYqFKCZnB257e3WrUc8990_UzsDKArybR1LAZU2JTnnzJkL9lLHvpP1Npy1onco5LKPNse2icoxVhKarOuuj3JnQXIgGHr8OBSfFpky3f3Pw4Dyp72e3geAEJVQs-0vg_U-UO-bN_XIakErDaSWOjBL1FYNDmGS7XfFD_mTjkiGgv6hRP4UrGQzbrtdVPT-WEfFeFxCW0BoD7MCeO6rHDMMJxpvYagOzbX4omb0_q6olRCqOJEbwbShf1kvvVsFAFhj7bWjqowpKDsRMbCzbpixpWktdi-hwmxNMd5ghXvxRmZmue69oqFPQLyHR1jfdqodyzvDOf0T46NUTWCGQJ0jbh4n-rw3VMbq5WK3dHjOQnuOFHY3omOCyICs8wIo0hIv86q-skaSJzSgnRyDY4K2P5aFR3-NQHanpzId6AB2q56rK2hrbW1WZ91XK6N-eS6GN_HyLrf4WT5ouk2XPABnBLlczavthN5BD_Z_pa9L8w'
+            },
+            {
+                label: 'Instagram',
+                icon: <FaInstagram color="#0E76A8" style={{ cursor: 'pointer' }} size={16} />,
+                url: 'https://www.instagram.com/tatiana.bagetti/'
             }
         ]
     },
@@ -91,7 +98,7 @@ const integrants = [
                 label: 'Portfólio',
                 icon: <FaBriefcase color="#333" style={{ cursor: 'pointer' }} size={16} />,
                 url: 'https://www.behance.net/lumaschwantes'
-            },
+            }
         ]
     },
     {
@@ -117,24 +124,22 @@ export default function AboutUs() {
     return (
         <section className="about-us">
             <section className="about-us-text col-lg-12">
-                <div className="col-lg-12 text-center">
-                    <Image
-                        src={palavrinhaDesktop}
-                        width={720}
-                        height={300}
-                    />
+                <div className="col-lg-12 flex-box m-auto">
+                    <div className="col-md-6 d-flex justify-content-end">
+                        <Image src={palavrinhaDesktop}/>
+                    </div>
+                    <div className="col-md-6" style={{textAlign:'left', paddingLeft: 30}}>
+                        <Image src={palavrinhaBrokeLineLogo}/>
+                        <p className="middle-text" style={{maxWidth: 600}}>
+                            O Palavrinha é um site para orientar, sugerir atividades e auxiliar na disseminação de informações confiáveis sobre o <b>desenvolvimento infantil</b> no que se refere à comunicação. Vamos contar um pouquinho da nossa história, de como o projeto foi criado e desenvolvido.
+                        </p>
+                    </div>
                 </div>
-                <div className="col-lg-12">
-                    <p className="middle-text">O Palavrinha é um site para orientar, sugerir atividades e auxiliar na disseminação de informações confiáveis sobre o desenvolvimento infantil no que se refere à comunicação. Vamos contar um pouquinho da nossa história, de como o projeto foi criado e desenvolvido.</p>
-                    <p className="middle-text">A ideia original era a criação de um aplicativo para orientar pais e professores sobre o desenvolvimento infantil e foi idealizado pela professora Tatiana Bagetti, que escreveu o projeto e submeteu para concorrer a bolsa PIBITI-UFF. O projeto foi desenvolvido de forma ativa pela estudante de fonoaudiologia Patricia do Valle Alves, que foi bolsista de Iniciação Tecnológica -PIBITI-UFF durante a maior parte de vigência do Projeto.</p>
-                    <p className="middle-text">Aos poucos, percebemos que precisávamos de uma equipe para a elaboração do projeto e convidamos Luma e Lucas, estudantes de Comunicação Visual Design e Sistemas de Informação, respectivamente. A equipe foi ampliada e nosso objetivo ficou cada vez mais possível.</p>
-                    <p className="middle-text">Inicialmente, seria desenvolvido um aplicativo mobile para a área de linguagem e fala infantil (LINFI). Em virtude da natureza das informações que seriam disponibilizadas, Patrícia e Luma sugeriram que a plataforma fosse, na verdade, um site. A sugestão foi super bem recebida pela professora Tatiana e por todos os integrantes.</p>
-                    <p className="middle-text">Após passar por um processo de naming, o site recebeu o nome de “Palavrinha”. Dessa forma, pôde transmitir com mais clareza para seu público sobre qual assunto se tratava e que objetivos tinha. O novo nome representa o universo infantil e de linguagem reunidos em uma palavra.</p>
-                    <p className="middle-text">Mais tarde, outra aluna do curso de Fonoaudiologia, Gabrielle, se juntou ao projeto e auxiliou na elaboração de alguns conteúdos.</p>
-                    <p className="middle-text">Uma prévia da apresentação do Palavrinha já foi apresentada no ETARSERRA-RJ. Enviamos também um projeto para apreciação do Comitê de Ética (CEP) do ISNF para que pudéssemos contar com a avaliação do site por outros fonoaudiólogos da área de linguagem infantil e recebemos aprovação do Comitê.</p>
-                    <p className="middle-text">Portanto,  o conteúdo disponibilizado no Palavrinha foi baseado na literatura científica e passou por avaliação de juízes fonoaudiólogos que atuam no campo da linguagem infantil.</p>
-                    <p className="middle-text">Esperamos que vocês gostem do site e do conteúdo aqui disponibilizado. É um prazer contribuir para a disseminação de informação de qualidade e  conteúdos científicos. Agradecemos imensamente o apoio financeiro da PIBITI-UFF e a todos que acreditaram na realização deste lindo trabalho em parceria entre diferentes áreas do saber.</p>
-                </div>
+                {/* <div className="col-lg-12">
+                    <div className="col-md-12 d-flex justify-content-center">
+                        <Image src={palavrinhaArrow}/>
+                    </div>
+                </div> */}
             </section>
             <section className="about-us-integrants col-lg-12 flex-wrap">
                 <h1 className="title">Quem Somos</h1>
@@ -227,6 +232,11 @@ export default function AboutUs() {
                                                     label: 'Currículo lattes',
                                                     icon: <FaFileAlt color="white" style={{ cursor: 'pointer' }} size={16} />,
                                                     url: 'http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K9673337Y7&tokenCaptchar=03AGdBq27cnPNxF_rE0Zfxosa2pUP_PkMgOjgyuBxKnjBOLpFDTTtMEq2Wcmb1VNug1CJldwmnhK8-9g0KPanB9ARA170Jzk4L0sEGPErSuIKTilWtbkAw4PkNS0YLeW6QJ01HpF66RVzTPL1KHjDds_tYtFGvN4yNFC0LHFy3fARjX7VFB2r0SShLYcEOkrW0hgQSQNXbcvuutqF4fgyGzAIysu5DliZxAYU_Hwm-g8EsSWlBEjZboxGwvX0Mjbm49QRN14T6MevIA2jSCP01Jq-Ailhhqu8omNe12w-MK7XdpxIqwAXyaGKR_GeZSpKITzmTZGfLlAwlIND3guhD4xigH49ad3MlGOqJjIiTVZBUqdLA17rVECK0AV2s31wW6hojYIh0RTAMksusYZ_-If8w-g02Z8hYtvwda77cJGiEf_gm0Cp6CAUm2cgRi0fPg3wVtOp0OoPJ22kslEwmk-4X6m5Tg54LJWEXbKgRC8ItXPtwjStsoLyFHI-BjQM723EkfqUNlDOKY1AhLIbQeZe7e1w1s9Gtjg'
+                                                },
+                                                {
+                                                    label: 'Instagram',
+                                                    icon: <FaInstagram color="#0E76A8" style={{ cursor: 'pointer' }} size={16} />,
+                                                    url: 'https://www.instagram.com/gabyferreirav/'
                                                 }
                                             ]
                                         }
@@ -251,7 +261,7 @@ export default function AboutUs() {
                 <hr style={{ color: 'white', border: '2px solid white', width: '80%', margin: 'auto' }} />
                 <h1 className="title">Agradecimentos</h1>
 
-                <div style={{marginBottom: 150, width: '90%', margin: 'auto' }}>
+                <div style={{ marginBottom: 150, width: '90%', margin: 'auto' }}>
                     <h3 className="integrant-text">
                         Agradecemos o apoio financeiro do PIBITI-UFF e a todas as pessoas que contribuíram de alguma forma para que este Projeto pudesse ser concretizado.
                     </h3>

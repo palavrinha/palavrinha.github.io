@@ -15,32 +15,32 @@ export default function Header() {
             <Container className="justify-content-end">
                 <Nav style={{flexDirection: 'row'}}>
                     <Nav.Link
-                        onClick={() => history.push('/language-development')}
+                        href="/#/language-development"
                         bsPrefix="header-item">
                         Desenvolvimento da linguagem
                     </Nav.Link>
                     <Nav.Link
-                        onClick={() => history.push('/child-activities')}
+                        href="/#/child-activities"
                         bsPrefix="header-item">
                         Brincadeiras
                     </Nav.Link>
                     <Nav.Link
-                        onClick={() => history.push('/myths-or-truths')}
+                        href="/#/myths-or-truths"
                         bsPrefix="header-item">
                         Mitos e Verdades
                     </Nav.Link>
                     <Nav.Link
-                        onClick={() => history.push('/systemic-page')}
+                        href="/#/systemic-page"
                         bsPrefix="header-item">
                         Cantinho sistêmico
                     </Nav.Link>
                     <Nav.Link
-                        onClick={() => history.push('/about-us')}
+                        href="/#/about-us"
                         bsPrefix="header-item">
                         Quem somos
                     </Nav.Link>
                     <Nav.Link
-                        onClick={() => history.push('/contact')}
+                        href="/#/contact"
                         bsPrefix="header-item">
                         Contate-nos
                     </Nav.Link>
