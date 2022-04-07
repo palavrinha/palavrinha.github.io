@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d5d22fbf.css",
-    "main.js": "/static/js/main.2060de82.js",
+    "main.js": "/static/js/main.01193797.js",
     "static/media/sisters-reading.png": "/static/media/sisters-reading.cac4398a15532182bf5c.png",
     "static/media/sisters-drawing.png": "/static/media/sisters-drawing.9961b16ebe2a5b0f8e18.png",
     "static/media/brincando_com_baloes.jpg": "/static/media/brincando_com_baloes.aaac57320fbad4132eaf.jpg",
@@ -16,7 +16,6 @@
     "static/media/patricia-do-valle-alves.png": "/static/media/patricia-do-valle-alves.4410eaa1120d3fd5ed94.png",
     "static/media/luma-heidenfelder-schwantes.png": "/static/media/luma-heidenfelder-schwantes.644ecb67e0742f4636be.png",
     "static/media/contacao_de_historias.jpg": "/static/media/contacao_de_historias.44977ace8d86d661f223.jpg",
-    "static/media/tatiana-bagetti.png": "/static/media/tatiana-bagetti.48cf3ad8b5a0aab5739c.png",
     "static/media/adedanha.jpg": "/static/media/adedanha.50011eeac116a06d4ddf.jpg",
     "static/media/boliche_com_garrafa_pet.jpg": "/static/media/boliche_com_garrafa_pet.308d91ab289fce1ff218.jpg",
     "static/media/gabrielle-vicente-ferreira.png": "/static/media/gabrielle-vicente-ferreira.804aba99db273b4097e2.png",
@@ -28,6 +27,7 @@
     "static/media/lucas-araujo-emmerich.jpg": "/static/media/lucas-araujo-emmerich.2987cf3b9e9a37733f4a.jpg",
     "static/media/dado_com_rimas.jpg": "/static/media/dado_com_rimas.14d618ae2ddcbe70132d.jpg",
     "static/media/boliche_das_silabas.jpg": "/static/media/boliche_das_silabas.22df6ae1ae4fb195059d.jpg",
+    "static/media/tatiana-bagetti.jpeg": "/static/media/tatiana-bagetti.0f40d05ec305f2a4ce77.jpeg",
     "static/media/descobrindo_as_silabas.jpg": "/static/media/descobrindo_as_silabas.8ec8b07aa08bb8d2d850.jpg",
     "static/media/telefone_sem_fio.jpg": "/static/media/telefone_sem_fio.20796853cf88479047ef.jpg",
     "static/media/quebra_cabeca.jpg": "/static/media/quebra_cabeca.77bbe470d929f1163248.jpg",
@@ -42,10 +42,10 @@
     "static/media/caca_ao_tesouro.jpg": "/static/media/caca_ao_tesouro.d8daf2c1f6342bdb579b.jpg",
     "index.html": "/index.html",
     "main.d5d22fbf.css.map": "/static/css/main.d5d22fbf.css.map",
-    "main.2060de82.js.map": "/static/js/main.2060de82.js.map"
+    "main.01193797.js.map": "/static/js/main.01193797.js.map"
   },
   "entrypoints": [
     "static/css/main.d5d22fbf.css",
-    "static/js/main.2060de82.js"
+    "static/js/main.01193797.js"
   ]
 }
