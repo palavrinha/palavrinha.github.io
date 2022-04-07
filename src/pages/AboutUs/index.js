@@ -8,7 +8,7 @@ import palavrinhaBrokeLineLogo from '../../assets/break-line-logo.png'
 
 import LAE from '../../assets/integrants/lucas-araujo-emmerich.jpg';
 import PVA from '../../assets/integrants/patricia-do-valle-alves.png';
-import TBA from '../../assets/integrants/tatiana-bagetti.png';
+import TBA from '../../assets/integrants/tatiana-bagetti.jpeg';
 import LHS from '../../assets/integrants/luma-heidenfelder-schwantes.png';
 import GVF from '../../assets/integrants/gabrielle-vicente-ferreira.png'
 
