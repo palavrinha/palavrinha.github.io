@@ -50,8 +50,8 @@ const integrants = [
     {
         photo: PVA,
         name: 'Patrícia do Valle Alves',
-        academics: 'Estudante de fonoaudiologia na Universidade Federal Fluminense, Instituto de Saúde de Nova Friburgo (UFF - ISNF)',
-        responsability: 'Como bolsista PIBIT durante um ano, idealizou o site junto da professora e orientadora Tatiana Bagetti. Elaborou todo o conteúdo do Palavrinha referente à teoria e prática fonoaudiológica.',
+        academics: 'Estudante de fonoaudiologia na Universidade Federal Fluminense, Instituto de Saúde de Nova Friburgo (UFF - ISNF).',
+        responsability: 'Como bolsista PIBIT durante 11 meses, idealizou a plataforma digital (aplicativo e site) junto à professora e Tatiana Bagetti. No seu trabalho de conclusão de curso abordou o desenvolvimento e a validação do site.',
         info: [
             {
                 label: 'Instagram',
@@ -68,8 +68,8 @@ const integrants = [
     {
         photo: TBA,
         name: 'Tatiana Bagetti',
-        academics: 'Fonoaudióloga, Dra. em Estudos da Linguagem, Mestre em Distúrbios da Comunicação Humana e Profa Adjunta do curso de graduação em Fonoaudiologia da UFF (Universidade Federal Fluminense).',
-        responsability: 'Professora responsável pelo projeto e orientadora dos estudantes envolvidos. Idealizou o site, juntamente com Patŕicia do Valle Alves. Elaborou conteúdos do ”Palavrinha”, corrigiu textos, supervisionou e orientou os estudantes. Também elaborou o conteúdo referente ao “Cantinho sistêmico”.',
+        academics: 'Fonoaudióloga, Mestre em Distúrbios da Comunicação Humana e Dra. em Estudos da Linguagem. Profa Adjunta do curso de graduação em Fonoaudiologia da UFF (Universidade Federal Fluminense).',
+        responsability: 'Profa. responsável pelo projeto e orientadora dos estudantes. Idealizou  a plataforma digital (aplicativo e site)  junto a  estudante Patŕicia do Valle Alves e orientou Patrícia em seu TCC.',
         info: [
             {
                 label: 'Currículo lattes',
@@ -124,22 +124,22 @@ export default function AboutUs() {
     return (
         <section className="about-us">
             <section className="about-us-text col-lg-12">
-                <div className="col-lg-12 flex-box m-auto">
+                <div className="col-lg-12 flex-box" style={{ paddingTop: 50 }}>
                     <div className="col-md-6 d-flex justify-content-end">
-                        <Image src={palavrinhaDesktop}/>
+                        <Image src={palavrinhaDesktop} />
                     </div>
-                    <div className="col-md-6" style={{textAlign:'left', paddingLeft: 30}}>
-                        <Image src={palavrinhaBrokeLineLogo}/>
-                        <p className="middle-text" style={{maxWidth: 600}}>
+                    <div className="col-md-6" style={{ textAlign: 'left', paddingLeft: 30, paddingRight: 40 }}>
+                        <Image src={palavrinhaBrokeLineLogo} />
+                        <p className="middle-text" style={{ maxWidth: 600 }}>
                             O Palavrinha é um site para orientar, sugerir atividades e auxiliar na disseminação de informações confiáveis sobre o <b>desenvolvimento infantil</b> no que se refere à comunicação. Vamos contar um pouquinho da nossa história, de como o projeto foi criado e desenvolvido.
                         </p>
                     </div>
                 </div>
-                {/* <div className="col-lg-12">
-                    <div className="col-md-12 d-flex justify-content-center">
-                        <Image src={palavrinhaArrow}/>
-                    </div>
-                </div> */}
+                <div className="col-md-12 d-flex justify-content-center">
+                    <span className="middle-text" style={{ textAlign: 'center', paddingTop: 20, width: 1200 }}>
+                        Este projeto foi realizado em parceria por professora do curso de Fonoaudiologia e estudantes de Fonoaudiologia, Comunicação Visual e Sistemas de Informação.
+                    </span>
+                </div>
             </section>
             <section className="about-us-integrants col-lg-12 flex-wrap">
                 <h1 className="title">Quem Somos</h1>
@@ -256,16 +256,17 @@ export default function AboutUs() {
                             </div>
                         </div>
                     </div>
+                    <div style={{ backgroundColor: '#038C3E' }}>
+                        <h1 className="title">Agradecimentos</h1>
+
+                        <div style={{ padding: 50, margin: 'auto' }}>
+                            <h3 className="integrant-text">
+                                Agradecemos o apoio financeiro do PIBITI-UFF e a todas as pessoas que contribuíram de alguma forma para que este Projeto pudesse ser concretizado.
+                            </h3>
+                        </div>
+                    </div>
                 </div>
 
-                <hr style={{ color: 'white', border: '2px solid white', width: '80%', margin: 'auto' }} />
-                <h1 className="title">Agradecimentos</h1>
-
-                <div style={{ marginBottom: 150, width: '90%', margin: 'auto' }}>
-                    <h3 className="integrant-text">
-                        Agradecemos o apoio financeiro do PIBITI-UFF e a todas as pessoas que contribuíram de alguma forma para que este Projeto pudesse ser concretizado.
-                    </h3>
-                </div>
             </section>
         </section>
     )
