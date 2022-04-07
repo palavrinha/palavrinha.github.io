@@ -92,11 +92,13 @@ export default function Home() {
                                     <span className="middle-text">
                                         Dicas para auxiliar no desenvolvimento da <b>comunicação e linguagem</b> da criança.
                                     </span>
-                                    <Button onClick={() => { 
-                                        window.location.href = '/#/language-development?tab=how-to-help-the-child'
-                                    }}>
-                                        Veja as dicas
-                                    </Button>
+                                    <div>
+                                        <Button onClick={() => { 
+                                            window.location.href = '/#/language-development?tab=how-to-help-the-child'
+                                        }}>
+                                            Veja as dicas
+                                        </Button>
+                                    </div>
                                 </section>
                             </div>
                         </div>
