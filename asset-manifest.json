@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3331b5df.css",
-    "main.js": "/static/js/main.c9141997.js",
+    "main.css": "/static/css/main.d5d22fbf.css",
+    "main.js": "/static/js/main.2060de82.js",
     "static/media/sisters-reading.png": "/static/media/sisters-reading.cac4398a15532182bf5c.png",
     "static/media/sisters-drawing.png": "/static/media/sisters-drawing.9961b16ebe2a5b0f8e18.png",
     "static/media/brincando_com_baloes.jpg": "/static/media/brincando_com_baloes.aaac57320fbad4132eaf.jpg",
@@ -31,7 +31,7 @@
     "static/media/descobrindo_as_silabas.jpg": "/static/media/descobrindo_as_silabas.8ec8b07aa08bb8d2d850.jpg",
     "static/media/telefone_sem_fio.jpg": "/static/media/telefone_sem_fio.20796853cf88479047ef.jpg",
     "static/media/quebra_cabeca.jpg": "/static/media/quebra_cabeca.77bbe470d929f1163248.jpg",
-    "static/media/quadro-de-fonemas.png": "/static/media/quadro-de-fonemas.cba64fa67576dc249d6a.png",
+    "static/media/quadro-de-fonemas.png": "/static/media/quadro-de-fonemas.20a9ce6c62eb36b516b0.png",
     "static/media/chocalho_divertido.jpg": "/static/media/chocalho_divertido.4ad8af80243a08631b1a.jpg",
     "static/media/dado_das_caretas.jpg": "/static/media/dado_das_caretas.98e86df2832e1f926a79.jpg",
     "static/media/caixa_misteriosa.jpg": "/static/media/caixa_misteriosa.cfa2d2c0f44b2967c70c.jpg",
@@ -41,11 +41,11 @@
     "static/media/Molde de dado.pdf": "/static/media/Molde de dado.4fc92c6ae804638d2576.pdf",
     "static/media/caca_ao_tesouro.jpg": "/static/media/caca_ao_tesouro.d8daf2c1f6342bdb579b.jpg",
     "index.html": "/index.html",
-    "main.3331b5df.css.map": "/static/css/main.3331b5df.css.map",
-    "main.c9141997.js.map": "/static/js/main.c9141997.js.map"
+    "main.d5d22fbf.css.map": "/static/css/main.d5d22fbf.css.map",
+    "main.2060de82.js.map": "/static/js/main.2060de82.js.map"
   },
   "entrypoints": [
-    "static/css/main.3331b5df.css",
-    "static/js/main.c9141997.js"
+    "static/css/main.d5d22fbf.css",
+    "static/js/main.2060de82.js"
   ]
 }
