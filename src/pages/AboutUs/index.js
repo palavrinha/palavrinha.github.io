@@ -131,7 +131,7 @@ export default function AboutUs() {
                     <div className="col-md-6" style={{ textAlign: 'left', paddingLeft: 30, paddingRight: 40 }}>
                         <Image src={palavrinhaBrokeLineLogo} />
                         <p className="middle-text" style={{ maxWidth: 600 }}>
-                            O Palavrinha é um site para orientar, sugerir atividades e auxiliar na disseminação de informações confiáveis sobre o <b>desenvolvimento infantil</b> no que se refere à comunicação. Vamos contar um pouquinho da nossa história, de como o projeto foi criado e desenvolvido.
+                            O Palavrinha é um site para orientar, sugerir atividades e auxiliar na disseminação de informações confiáveis sobre o <b>desenvolvimento infantil</b> no que se refere à comunicação.
                         </p>
                     </div>
                 </div>

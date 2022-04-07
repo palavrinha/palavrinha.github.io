@@ -8,7 +8,12 @@ import From6To9Years from './From6To9Years';
 import MovieRecommendations from './MovieRecommendations';
 
 export default function ChildActivities() {
-    const [tabKey, setTabKey] = useState('about-child-activities');
+    const [tabKey, changeTab] = useState('about-child-activities');
+
+    const setTabKey = (tab) => {
+        window.scrollTo(0, 0);
+        changeTab(tab);
+    }
 
     return (
         <Tab.Container

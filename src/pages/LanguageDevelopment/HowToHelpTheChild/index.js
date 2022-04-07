@@ -47,7 +47,14 @@ export default function HowToHelpTheChild() {
         <div>
             <p>Através das brincadeiras e do lúdico os bebês e as crianças pequenas se desenvolvem, por isso use jogos e brinquedos e faça brincadeiras indicadas para a faixa-etária de seu pequeno3. </p>
             <p>Acesse a sessão brincadeira de nosso site e confira sugestões de brincadeiras para crianças de 0 a 9 anos.</p>
-            <span style={{ cursor: 'pointer' }} onClick={() => history.push('/fun-games')}>
+            <span style={{ cursor: 'pointer' }}
+
+                onClick={() => {
+
+                    window.location.href = '/#/child-activities'
+                    history.push('/child-activities')
+                }
+                }>
                 🡥<u><b> Acesse:</b> Brincadeiras</u>
             </span>
         </div>,
@@ -108,7 +115,7 @@ export default function HowToHelpTheChild() {
                         }}
                         disabled={currentTipIndex === 0}
                     />
-                    {tips.map((tip,idx) => {
+                    {tips.map((tip, idx) => {
                         return <Pagination.Item className="desktop-only" key={idx} onClick={(e) => { changePage(Number(e.target.text)) }}> {tips.indexOf(tip)} </Pagination.Item>
                     })}
                     <Pagination.Next

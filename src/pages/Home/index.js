@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Carousel, Button } from 'react-bootstrap';
-import { useHistory } from 'react-router';
 import sisters_reading from '../../assets/home/sisters-reading.png';
 import sisters_drawing from '../../assets/home/sisters-drawing.png';
 import father_and_daughter from '../../assets/home/father-and-daughter.png';
@@ -9,7 +8,6 @@ import './index.css';
 
 export default function Home() {
     const [carouselIndex, setCarouselIndex] = useState(0);
-    const history = useHistory();
 
     const prevIcon = (
         <svg width="48" height="65" viewBox="0 0 48 65" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,7 +48,9 @@ export default function Home() {
                                         <b> desenvolvimento infantil </b>
                                         no que se refere a comunicação.
                                     </span>
-                                    <Button onClick={() => { history.push('/about-us') }}>
+                                    <Button onClick={() => {
+                                        window.location.href = '/#/about-us'
+                                    }}>
                                         Saiba mais sobre nós
                                     </Button>
                                 </section>
@@ -65,7 +65,9 @@ export default function Home() {
                                     <p className="middle-text">
                                         Uma grande preocupação de quem convive com crianças é: <b>quando elas começarão a falar?</b>
                                     </p>
-                                    <Button onClick={() => { history.push('/about-us') }}>
+                                    <Button onClick={() => {
+                                        window.location.href = '/#/language-development'
+                                    }}>
                                         Saiba mais
                                     </Button>
                                 </section>
@@ -90,7 +92,9 @@ export default function Home() {
                                     <span className="middle-text">
                                         Dicas para auxiliar no desenvolvimento da <b>comunicação e linguagem</b> da criança.
                                     </span>
-                                    <Button onClick={() => { history.push('/about-us') }}>
+                                    <Button onClick={() => { 
+                                        window.location.href = '/#/language-development?tab=how-to-help-the-child'
+                                    }}>
                                         Veja as dicas
                                     </Button>
                                 </section>
